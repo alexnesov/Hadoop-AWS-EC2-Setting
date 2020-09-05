@@ -1,3 +1,12 @@
+
+
+sudo touch /etc/profile.d/bigdata.sh
+sudo chmod +x /etc/profile.d/bigdata.sh
+
+#This file will maintain our environment variables
+
+sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
 export NameNodeDNS="ec2-35-180-126-36.eu-west-3.compute.amazonaws.com"
 export DataNode001DNS="ec2-15-188-76-198.eu-west-3.compute.amazonaws.com"
 export DataNode002DNS="ec2-15-236-212-130.eu-west-3.compute.amazonaws.com"
@@ -10,16 +19,6 @@ export DataNode003IP="172.31.18.111"
 
 export IdentityFile="~/.ssh/hadoop-aws.pem"
 
-
-sudo touch /etc/profile.d/bigdata.sh
-sudo chmod +x /etc/profile.d/bigdata.sh
-
-#This file will maintain our environment variables
-
-sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
-
-export IdentityFile="~/.ssh/hadoop-aws.pem"
 echo "# AmazonEC2 Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "export NameNodeDNS=\"${NameNodeDNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "export DataNode001DNS=\"${DataNode001DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
