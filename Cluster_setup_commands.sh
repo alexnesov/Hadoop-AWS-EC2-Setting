@@ -11,11 +11,8 @@ export DataNode003IP="172.31.21.161"
 export IdentityFile="~/.ssh/hadoop-aws.pem"
 
 
-
-
 sudo touch /etc/profile.d/bigdata.sh
 sudo chmod +x /etc/profile.d/bigdata.sh
-
 
 #This file will maintain our environment variables
 
@@ -33,27 +30,16 @@ export DataNode003IP="172.31.21.161"
 
 export IdentityFile="~/.ssh/hadoop-aws.pem"
 echo "# AmazonEC2 Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "export NameNodeDNS=\"${NameNodeDNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "export DataNode001DNS=\"${DataNode001DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "export DataNode002DNS=\"${DataNode002DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "export DataNode003DNS=\"${DataNode003DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "export NameNodeIP=\"${NameNodeIP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "export DataNode001IP=\"${DataNode001IP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "export DataNode002IP=\"${DataNode002IP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "export DataNode003IP=\"${DataNode003IP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "export IdentityFile=\"${IdentityFile}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo -e "# AmazonEC2 Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
 
