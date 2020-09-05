@@ -51,3 +51,8 @@ sudo rm -rf /etc/hostname
 echo -e "${publichost}" | sudo tee --append /etc/hostname > /dev/null
 sudo chown root /etc/hostname
 
+# REBOOT
+# Configure the /etc/hosts file
+
+
+# SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960

@@ -1,20 +1,20 @@
-Host namenode
+Host 0.0.0.0
   HostName ec2-35-180-126-36.eu-west-3.compute.amazonaws.com 
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
-  Port 22
-Host datanode1
+Host hadoop-master
+  HostName ec2-35-180-126-36.eu-west-3.compute.amazonaws.com 
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-aws.pem
+Host DataNode001
   HostName ec2-15-188-76-198.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
-  Port 22
-Host datanode2
+Host DataNode002
   HostName ec2-15-236-212-130.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
-  Port 22
-Host datanode3
+Host DataNode003
   HostName ec2-15-188-238-197.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
-  Port 22
