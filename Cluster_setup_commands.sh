@@ -71,5 +71,45 @@ echo -e "ff02::3 ip6-allhosts" | sudo tee --append /etc/hosts > /dev/null
 sudo chown root /etc/hosts
 
 # REBOOT
+sudo chmod 0400 ~/.ssh/config
+sudo chmod 0400 ~/.ssh/hadoop-aws.pem
+
+
+
+sudo rm -rf ~/.ssh/id_rsa*
+sudo rm -rf ~/.ssh/known_hosts
+
+ssh-keygen -f ~/.ssh/id_rsa -t rsa -P ""
+
+
+sudo chmod 0600 ~/.ssh/id_rsa.pub
+sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+
+hosts=0.0.0.0,127.0.0.1,127.0.1.1,hadoop-master,DataNode001,DataNode002,DataNode003
+ssh-keyscan -H ${hosts} >> ~/.ssh/known_hosts
+
+# Only on NAMENODE
+sudo cat ~/.ssh/id_rsa.pub | ssh -o StrictHostKeyChecking=no DataNode001 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa.pub | ssh -o StrictHostKeyChecking=no DataNode002 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa.pub | ssh -o StrictHostKeyChecking=no DataNode003 'cat >> ~/.ssh/authorized_keys'
+
+# TESTS 
+
+ssh -o StrictHostKeyChecking=no localhost
+exit
+
+ssh -o StrictHostKeyChecking=no hadoop-master
+exit
+
+ssh -o StrictHostKeyChecking=no DataNode001
+exit
+
+ssh -o StrictHostKeyChecking=no DataNode002
+exit
+
+ssh -o StrictHostKeyChecking=no DataNode003
+exit
+
 
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960
