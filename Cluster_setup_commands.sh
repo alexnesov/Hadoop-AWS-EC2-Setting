@@ -54,5 +54,22 @@ sudo chown root /etc/hostname
 # REBOOT
 # Configure the /etc/hosts file
 
+sudo rm -rf /etc/hosts
+echo -e "127.0.0.1\tlocalhost" | sudo tee --append /etc/hosts > /dev/null
+echo -e "127.0.1.1\t${publichost}" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${NameNodeIP}\thadoop-master" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode001IP}\tDataNode001" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode002IP}\tDataNode002" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode003IP}\tDataNode003" | sudo tee --append /etc/hosts > /dev/null
+echo -e "\n# The following lines are desirable for IPv6 capable hosts" | sudo tee --append /etc/hosts > /dev/null
+echo -e "::1 ip6-localhost ip6-loopback" | sudo tee --append /etc/hosts > /dev/null
+echo -e "fe00::0 ip6-localnet" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff00::0 ip6-mcastprefix" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::1 ip6-allnodes" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::2 ip6-allrouters" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::3 ip6-allhosts" | sudo tee --append /etc/hosts > /dev/null
+sudo chown root /etc/hosts
+
+# REBOOT
 
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960
