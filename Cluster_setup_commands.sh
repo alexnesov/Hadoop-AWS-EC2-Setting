@@ -3,7 +3,7 @@
 sudo touch /etc/profile.d/bigdata.sh
 sudo chmod +x /etc/profile.d/bigdata.sh
 
-#This file will maintain our environment variables
+#This new created file will maintain our environment variables
 
 sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
