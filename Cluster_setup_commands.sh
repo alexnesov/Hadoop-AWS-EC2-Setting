@@ -111,5 +111,28 @@ exit
 ssh -o StrictHostKeyChecking=no DataNode003
 exit
 
+# If something went wrong during your SSH setup, run the following code to reset SSH and start over:
+
+filename=~/.ssh/authorized_keys
+line=$(head -1 ${filename})
+echo $line
+
+sudo rm -rf ${filename}
+echo -e "${line}" | tee --append ${filename} > /dev/null
+sudo chmod 0600 ${filename}
+
+sudo rm -rf ~/.ssh/id_rsa*
+sudo rm -rf ~/.ssh/known_hosts
+ssh-keygen  -f ~/.ssh/id_rsa -t rsa -P ""
+sudo chmod 0600 ~/.ssh/id_rsa.pub
+sudo cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+sudo chmod 0600 ~/.ssh/authorized_keys
+sudo chmod 0400 ~/.ssh/config
+sudo chmod 0400 ~/.ssh/hadoop-clusterkeypair.pem
+
+hosts=0.0.0.0,127.0.0.1,127.0.1.1,hadoop-master,DataNode001,DataNode002,DataNode003
+ssh-keyscan -H ${hosts} >> ~/.ssh/known_hosts
+
+sudo service ssh restart
 
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960
