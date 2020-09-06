@@ -135,4 +135,44 @@ ssh-keyscan -H ${hosts} >> ~/.ssh/known_hosts
 
 sudo service ssh restart
 
+
+########################################
+
+# Install Java Developers Kit (JDK)
+
+sudo apt-get -y update
+sudo apt-get -y install default-jdk
+
+cd /usr/lib/jvm/
+
+# Add Environment Variables to /etc/profile.d/bigdata.sh
+sudo gedit /etc/profile.d/bigdata.sh
+
+# Add Environment Variables to /etc/profile.d/bigdata.sh
+echo "# JAVA Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+echo "export JAVA_HOME=/usr/lib/jvm/default-java" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+echo "PATH=\$PATH:\$JAVA_HOME/bin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+echo "# JAVA Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+# Confirm that your Java variables were added, open the /etc/profile.d/bigdata.sh file:
+
+sudo gedit /etc/profile.d/bigdata.sh
+sudo reboot
+java -version
+echo $JAVA_HOME 
+# Displays something similar to this:
+# /usr/lib/jvm/default-java
+
+
+# IPV6 disabled  useless on Hadoop 2.9
+
+# Download Hadoop from Apache
+
+wget https://archive.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz -P ~/Downloads/Hadoop
+
+
+sudo tar -zxvf ~/Downloads/Hadoop/hadoop-*.tar.gz -C /usr/local
+
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960
