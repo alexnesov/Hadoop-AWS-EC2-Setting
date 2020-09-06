@@ -180,4 +180,111 @@ start-dfs.sh
 
 # Test health of node by going to "<public DNS address>:50070"
 
+# FROM ONE NODE TO MULTI NODE
+
+# In CORE-SITE.XML
+  <property>
+
+    <name>thisnamenode</name>
+
+    <value>hadoop-master</value>
+
+    <description>NameNode is the hostname specified in the config file and etc/hosts file. It may be replaced with a DNS that points to your NameNode.</description>
+
+  </property>
+
+# In YARN-SITE.XML
+
+  <property>
+
+    <name>mapred.job.tracker</name>
+
+    <value>${thisnamenode}:9001</value>
+
+  </property>
+
+# In HDFS-SITE.XML
+
+  <property>
+
+    <name>dfs.replication</name>
+
+    <value>3</value>
+
+    <description>Default block replication.
+
+The actual number of replications can be specified when the file is created.
+
+The default is used if replication is not specified in create time.
+
+    </description>
+
+  </property>
+
+
+# Copy configuration files to all Nodes
+cd $HADOOP_CONF_DIR
+scp hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode001:$HADOOP_CONF_DIR
+scp hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode002:$HADOOP_CONF_DIR
+scp hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode003:$HADOOP_CONF_DIR
+
+# We need to create a .masters file. It needs to exist on any of the nodes that
+# are designated as namenode. Our "hadoop-master" is one, and we are going to
+# designate the DataNode001 as the second namenode.
+
+sudo rm -rf $HADOOP_CONF_DIR/masters
+
+echo -e "hadoop-master" | sudo tee --append $HADOOP_CONF_DIR/masters > /dev/null
+echo -e "DataNode001" | sudo tee --append $HADOOP_CONF_DIR/masters > /dev/null
+
+# Change ownership for new master files (namenode + DataNode001)
+# Set ownership and permissions to the root (ubuntu on Amazon EC2 or root on VMWare) owner:
+
+sudo chown ubuntu $HADOOP_CONF_DIR/masters
+sudo chmod 0644 $HADOOP_CONF_DIR/masters
+
+# OR (instead of having to redo the same thing manually on other terminal)
+scp $HADOOP_CONF_DIR/masters DataNode001:$HADOOP_CONF_DIR
+
+# Configure .slaves File (in $HADOOP_CONF_DIR/slaves)
+# Add following:
+DataNode001
+DataNode002
+DataNode003
+
+# By executing this:
+
+sudo rm -rf $HADOOP_CONF_DIR/slaves
+echo -e "DataNode001" | sudo tee --append $HADOOP_CONF_DIR/slaves > /dev/null
+echo -e "DataNode002" | sudo tee --append $HADOOP_CONF_DIR/slaves > /dev/null
+echo -e "DataNode003" | sudo tee --append $HADOOP_CONF_DIR/slaves > /dev/null
+
+# Set ownership and permissions
+
+sudo chown ubuntu $HADOOP_CONF_DIR/slaves
+sudo chmod 0644 $HADOOP_CONF_DIR/slaves
+
+# Copy the slaves file to each Node in your cluster
+
+scp $HADOOP_CONF_DIR/slaves DataNode001:$HADOOP_CONF_DIR
+scp $HADOOP_CONF_DIR/slaves DataNode002:$HADOOP_CONF_DIR
+scp $HADOOP_CONF_DIR/slaves DataNode003:$HADOOP_CONF_DIR
+
+# Set permission on every node
+
+sudo chown ubuntu $HADOOP_CONF_DIR/slaves
+sudo chmod 0644 $HADOOP_CONF_DIR/slaves
+
+# Copy the slaves file to each Node in your cluster
+
+scp $HADOOP_CONF_DIR/slaves DataNode001:$HADOOP_CONF_DIR
+scp $HADOOP_CONF_DIR/slaves DataNode002:$HADOOP_CONF_DIR
+scp $HADOOP_CONF_DIR/slaves DataNode003:$HADOOP_CONF_DIR
+
+# Formatting multi-node hadoop Cluster
+
+sudo rm -rf $HADOOP_DATA_HOME
+sudo rm -rf $HADOOP_HOME/logs
+hdfs namenode -format
+
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960

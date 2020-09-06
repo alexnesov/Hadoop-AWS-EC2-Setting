@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3396 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <title>Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom</title>
+    <link href="https://klasserom.azurewebsites.net/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/bootstrap" rel="stylesheet">
+
+
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism.css" rel="stylesheet">
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/site-bootstrap.css" rel="stylesheet">
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/imageviewer.css" rel="stylesheet">
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/callouts.css" rel="stylesheet">
+    <link href="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/Styles.css" rel="stylesheet">
+
+    
+    
+
+<script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/clipboard.min.js"></script></head>
+<body class="pb-5 mb-2">
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <a class="navbar-brand" href="https://klasserom.azurewebsites.net/"><span class="fa fa-school"></span> Klasserom</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="https://klasserom.azurewebsites.net/Home/About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://klasserom.azurewebsites.net/Home/Contact">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://klasserom.azurewebsites.net/Account/Register" id="registerLink">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://klasserom.azurewebsites.net/Account/Login" id="loginLink">Log in</a>
+                </li>
+        </ul>
+    </div>
+</nav>
+
+
+    
+
+    <main role="main" class="container thread-parent">
+        
+
+
+<div aria-label="Toolbar with button groups" class="btn-toolbar text-dark pt-1 d-print-none " id="Toolbar_Lessons" role="toolbar"><div aria-label="First group" class="btn-group" role="group"><a class="btn text-dark" href="https://klasserom.azurewebsites.net/Lessons" role="button" title="Index"><i aria-hidden="true" class="fa fa-list-alt fa-2x"></i></a></div></div>
+<h2>BDAT1002-2017B - Data Systems Architecture<br><small>Friday, Jan 12, 2018 - Final Project</small></h2>
+<p class="small">
+    <a href="https://klasserom.azurewebsites.net/Classes/Binder/24" target="_blank">BDAT1002-2017B - Data Systems Architecture</a>
+    <br>Written by: cdyck, Last editted on: Wednesday, November 22, 2017
+</p>
+
+
+
+<div id="toc">
+            <p class="h3">Table of Contents</p>
+                <p class="h4">Lessons</p>
+                <ul>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3422">01.06.01 Install Hadoop on Amazon AWS EC2 Instances</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3424">01.06.02 Setup Amazon AWS EC2 Instances</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3296">01.06.03 Setup WinSCP and puTTY</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3403">01.06.04 Common Environment Variables for Big Data</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3430">01.06.04c Map Amazon EC2 Environment Variables</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3427">01.06.05b Map Nodes in etc/hosts File on Amazon EC2 Instances</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3423">01.06.07 Connect and Install Passwordless SSH using ~/.ssh/.config, PEM and PPK files</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3429">01.06.09 Configure Passwordless SSH on Amazon EC2 Instances</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3377">01.06.10 Install Java Developers Kit (JDK)</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3386">01.06.12 Disable IPv6</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3380">01.06.13 Install and Configure Hadoop on Single Node Cluster</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3395">01.06.15 Install Hadoop on all Slave Nodes</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3428">01.06.16 Configure Hadoop on Multiple Node Cluster</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3396">01.06.19 Configure .masters File</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3397">01.06.20 Configure .slaves File</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3426">01.06.21 Format Your Multi-Node Hadoop Cluster</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3431">01.06.22 Reset all settings in your cluster</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3383">01.06.30 Start up your Hadoop Cluster</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3382">01.06.50 Test the HDFS</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3400">10.00.01 Example MapReduce on Hadoop</a></li>
+                        <li><a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3229">Final Project</a></li>
+                </ul>
+
+</div>
+<div id="maincontent">
+        <h3>Final Project</h3>
+        
+        <div class="display-field">
+
+    <h3>Lessons</h3>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3422">01.06.01 Install Hadoop on Amazon AWS EC2 Instances <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3422"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Install Hadoop on Amazon AWS EC2 Instances</h5>
+<ol>
+<li>Setup EC2 Instances</li>
+<li>Setup SSH and Configuration files</li>
+<li>Configure Putty and WinSCP</li>
+<li>Install <a href="https://klasserom.azurewebsites.net/CourseStrands/Binder/3380" target="_blank" rel="noopener">Hadoop as a Single Node cluster</a> on each node</li>
+<li>Test HDFS</li>
+<li>Configure <a href="https://klasserom.azurewebsites.net/CourseStrands/Binder/3385" target="_blank" rel="noopener">Hadoop as a Multiple Node cluster</a></li>
+</ol>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://sagarruchandani.wordpress.com/2015/08/01/hadoop-setting-up-hadoop-2-6-0-single-node-on-aws-ec2-ubuntu-ami" title="https://sagarruchandani.wordpress.com/2015/08/01/hadoop-setting-up-hadoop-2-6-0-single-node-on-aws-ec2-ubuntu-ami" target="_blank">Hadoop: Setting up Hadoop 2.6.0 (single node) on AWS EC2 Ubuntu AMI | Sagar Ruchandani's blog - https://sagarruchandani.wordpress.com/2015/08/01/h...</a>
+                </li>
+                <li>
+                    <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" title="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" target="_blank">Simplify Your Life With an SSH Config File - http://nerderati.com/2011/03/17/simplify-your-life...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3424">01.06.02 Setup Amazon AWS EC2 Instances <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3424"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Setup Amazon AWS EC2 Instances</h4>
+<h5>Build EC2 Instances</h5>
+<h6>Choose Instance Type</h6>
+<table class="table" style="border-collapse: collapse;">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<div style="color: #444444; font-family: &#39;Helvetica Neue&#39;, Roboto, Arial, sans-serif; font-size: 15px; padding-bottom: 10px;"><span style="font-weight: bold;">Ubuntu Server 16.04 LTS (HVM), SSD Volume Type</span>&nbsp;- ami-aa2ea6d0</div>
+<div style="color: #444444; font-family: &#39;Helvetica Neue&#39;, Roboto, Arial, sans-serif; font-size: 13px; padding-bottom: 10px;">Ubuntu Server 16.04 LTS (HVM),EBS General Purpose (SSD) Volume Type. Support available from Canonical (http://www.ubuntu.com/cloud/services).</div>
+<div style="color: #444444; font-family: &#39;Helvetica Neue&#39;, Roboto, Arial, sans-serif; font-size: 11px;">Root device type: ebs&nbsp;<span style="padding-left: 20px;">Virtualization type</span>:&nbsp;hvm&nbsp;
+<div style="display: inline;"><span style="padding-left: 20px;">ENA Enabled</span>:&nbsp;Yes</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h5>Configure Instance Details</h5>
+<p>Select the following Instance type</p>
+<table class="table" style="border-collapse: collapse;">
+<thead>
+<tr>
+<td style="width: 100%;">Type</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="width: 100%;">t2.micro (Variable ECUs, 1 vCPUs, 2.5 GHz, Intel Xeon Family, 1 GiB memory, EBS only)</td>
+</tr>
+</tbody>
+</table>
+<h5>Volumes and Storage</h5>
+<table class="table" style="border-collapse: collapse;">
+<tbody>
+<tr>
+<th style="width: 50%;">Size</th>
+<td style="width: 50%;">8Gb</td>
+</tr>
+<tr>
+<th style="width: 50%;">Volume Type</th>
+<td style="width: 50%;">General Purpose SSD</td>
+</tr>
+</tbody>
+</table>
+<h5>Add Tags</h5>
+<p>Add a tag with the following settings:</p>
+<table class="table" style="border-collapse: collapse;">
+<tbody>
+<tr style="height: 24px;">
+<td style="width: 50%; height: 24px;">Name</td>
+<td style="width: 50%; height: 24px;">NameNode</td>
+</tr>
+</tbody>
+<thead>
+<tr style="height: 24px;">
+<td style="width: 50%; height: 24px;">Key</td>
+<td style="width: 50%; height: 24px;">Value</td>
+</tr>
+</thead>
+</table>
+<h5>Configure Security Group</h5>
+<table class="table" style="border-collapse: collapse;">
+<tbody>
+<tr>
+<th style="width: 50%;">Security group name</th>
+<td style="width: 50%;">hadoop-cluster</td>
+</tr>
+<tr style="height: 24px;">
+<th style="width: 50%; height: 24px;">Type</th>
+<td style="width: 50%; height: 24px;">All Traffic</td>
+</tr>
+<tr style="height: 24px;">
+<th style="width: 50%; height: 24px;">Protocal</th>
+<td style="width: 50%; height: 24px;">All</td>
+</tr>
+<tr style="height: 24px;">
+<th style="width: 50%; height: 24px;">Port Range</th>
+<td style="width: 50%; height: 24px;">0 - 65535</td>
+</tr>
+<tr style="height: 24px;">
+<th style="width: 50%; height: 24px;">Source</th>
+<td style="width: 50%; height: 24px;">Anywhere (0.0.0.0/0, ::/0)</td>
+</tr>
+</tbody>
+</table>
+<h5>Generate Public and Private Key Pairs</h5>
+<h6>Create a new key pair</h6>
+<table class="table">
+<tbody>
+<tr>
+<th style="width: 50%;">Key pair name</th>
+<td style="width: 50%;">hadoop-clusterkeypair</td>
+</tr>
+</tbody>
+</table>
+<h6>Download Key Pair</h6>
+<ul>
+<li>Save the Key Pair file to a location on your local computer</li>
+<li>Name the file <code>hadoop-clusterkeypair.pem</code></li>
+</ul>
+<h6>Launch Instances</h6>
+<p>Select the Launch Instances button.&nbsp; This will bring you to a summary of your new Virtual Machine.</p>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://sagarruchandani.wordpress.com/2015/08/01/hadoop-setting-up-hadoop-2-6-0-single-node-on-aws-ec2-ubuntu-ami" title="https://sagarruchandani.wordpress.com/2015/08/01/hadoop-setting-up-hadoop-2-6-0-single-node-on-aws-ec2-ubuntu-ami" target="_blank">Hadoop: Setting up Hadoop 2.6.0 (single node) on AWS EC2 Ubuntu AMI | Sagar Ruchandani's blog - https://sagarruchandani.wordpress.com/2015/08/01/h...</a>
+                </li>
+                <li>
+                    <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" title="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" target="_blank">Simplify Your Life With an SSH Config File - http://nerderati.com/2011/03/17/simplify-your-life...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3296">01.06.03 Setup WinSCP and puTTY <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3296"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h3>Setup WinSCP and puTTY</h3>
+<p>You will need to install WinSCP and Putty to manage the setup and configuration of your Amazon instances.&nbsp;&nbsp;</p>
+<p>Watch this view to assist you with the setup and configuration of WinSCP and Putty.&nbsp; The video covers several parts of the setup process including SSH configuration.&nbsp; Follow the parts related to installation of&nbsp;WinSCP and Putty.</p>
+<p>Additional links to&nbsp;WinSCP and Putty are provided below.</p>
+<p style="text-align: center;"><iframe src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/lRQqR0Fm1oE.html" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 2: Setup puTTY and WinSCP to connect to Amazon Hadoop Cluster - YouTube - https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" title="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">puTTY Download - http://www.chiark.greenend.org.uk/~sgtatham/putty/...</a>
+                </li>
+                <li>
+                    <a href="https://winscp.net/eng/download.php" title="https://winscp.net/eng/download.php" target="_blank">WinSCP Download - https://winscp.net/eng/download.php</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3403">01.06.04 Common Environment Variables for Big Data <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3403"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Common Environment Variables for Big Data</h4>
+<p>The Big Data technologies that we use often require Environment Variables to be set that are common for all user of your environment.&nbsp;&nbsp;</p>
+<p>In general these include</p>
+<ul>
+<li>Java - JAVA_HOME</li>
+<li>Hadoop - HADOOP_HOME, Hive - HIVE_HOME,&nbsp;Pig - PIG_HOME</li>
+</ul>
+<p>We will take advantage of some features of the Ubuntu operating system. In particular <code>etc/profile.d</code>.&nbsp; This is a directory that contains shell script files that run during start up and general install features for all users.</p>
+<p>We will begin by creating a file named <code>bigdata.sh</code> to use used in later installations:</p>
+<p>NOTE: This command may ask for a password.</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">touch</span> /etc/profile.d/bigdata.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Execute the following to set permission and initialize the file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> +x /etc/profile.d/bigdata.sh
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">'#!/bin/bash\n# Environment Variables for Big Data tools\n'</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Reboot your system</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>&nbsp;</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3430">01.06.04c Map Amazon EC2 Environment Variables <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3430"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <h4>Map Amazon EC2 Environment Variables</h4>
+<p>In this section we will add Environment Variables that we can use throughout our clusters to refer to Nodes.</p>
+<p>Collect the Public DNS and "Internal" IP addresses from your Amazon EC2 Instances and add the following to your bigdata.sh file:</p>
+<div class="code-toolbar"><pre class=" language-text"><code class=" language-text">export NameNodeDNS="ec2-34-227-205-116.compute-1.amazonaws.com"
+export DataNode001DNS="ec2-52-90-160-54.compute-1.amazonaws.com"
+export DataNode002DNS="ec2-54-175-210-82.compute-1.amazonaws.com"
+export DataNode003DNS="ec2-54-86-10-108.compute-1.amazonaws.com"
+
+export NameNodeIP="172.31.31.127"
+export DataNode001IP="172.31.30.70"
+export DataNode002IP="172.31.24.96"
+export DataNode003IP="172.31.88.102"
+
+export IdentityFile="~/.ssh/hadoop-clusterkeypair.pem"
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Text</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Execute the following to add the schema to the bigdata.sh file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">export</span> NameNodeDNS<span class="token operator">=</span><span class="token string">"ec2-18-218-165-62.us-east-2.compute.amazonaws.com"</span>
+<span class="token function">export</span> DataNode001DNS<span class="token operator">=</span><span class="token string">"ec2-13-58-51-176.us-east-2.compute.amazonaws.com"</span>
+<span class="token function">export</span> DataNode002DNS<span class="token operator">=</span><span class="token string">"ec2-18-217-252-152.us-east-2.compute.amazonaws.com"</span>
+<span class="token function">export</span> DataNode003DNS<span class="token operator">=</span><span class="token string">"ec2-18-218-96-134.us-east-2.compute.amazonaws.com"</span>
+<span class="token function">export</span> NameNodeIP<span class="token operator">=</span><span class="token string">"172.31.31.127"</span>
+<span class="token function">export</span> DataNode001IP<span class="token operator">=</span><span class="token string">"172.31.30.70"</span>
+<span class="token function">export</span> DataNode002IP<span class="token operator">=</span><span class="token string">"172.31.24.96"</span>
+<span class="token function">export</span> DataNode003IP<span class="token operator">=</span><span class="token string">"172.31.88.102"</span>
+<span class="token function">export</span> IdentityFile<span class="token operator">=</span><span class="token string">"~/.ssh/hadoop-clusterkeypair.pem"</span>
+
+<span class="token keyword">echo</span> <span class="token string">"# AmazonEC2 Variables START"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"export NameNodeDNS=\"<span class="token variable">${NameNodeDNS}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"export DataNode001DNS=\"<span class="token variable">${DataNode001DNS}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"export DataNode002DNS=\"<span class="token variable">${DataNode002DNS}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"export DataNode003DNS=\"<span class="token variable">${DataNode003DNS}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"export NameNodeIP=\"<span class="token variable">${NameNodeIP}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"export DataNode001IP=\"<span class="token variable">${DataNode001IP}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"export DataNode002IP=\"<span class="token variable">${DataNode002IP}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"export DataNode003IP=\"<span class="token variable">${DataNode003IP}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"export IdentityFile=\"<span class="token variable">${IdentityFile}</span>\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> -e <span class="token string">"# AmazonEC2 Variables END"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Reboot your system</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>&nbsp;</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3427">01.06.05b Map Nodes in etc/hosts File on Amazon EC2 Instances <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3427"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <h5>Map Nodes in etc/hosts File&nbsp;on Amazon EC2 Instances</h5>
+<p>The etc/hosts file manages direct links to servers through the use of IP address and Host name.&nbsp;In this section we will map our Hadoop Cluster Nodes.&nbsp;&nbsp;</p>
+<p>Go to each Node and get the IP address.</p>
+<p>Run the following command on each Node and record the return value:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">hostname</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>The result should look similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">ip-172-31-31-127</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>NOTE: Change the DNS entry to match your Public <strong>Amazon EC2</strong> Instance DNS</p>
+<p>Execute the following code to create a local variable to store your Public Amazon EC2 Instance DNS:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">publichost<span class="token operator">=</span>ec2-54-86-10-108.compute-1.amazonaws.com
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Or, use the Environment Variables we setup earlier:</p>
+<p>NOTE: Do not execute all of these entries at once. One at a time on the matching instance</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">publichost<span class="token operator">=</span><span class="token variable">${NameNodeDNS}</span>
+publichost<span class="token operator">=</span><span class="token variable">${DataNode001DNS}</span>
+publichost<span class="token operator">=</span><span class="token variable">${DataNode002DNS}</span>
+publichost<span class="token operator">=</span><span class="token variable">${DataNode003DNS}</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Execute the following code to change the local hostname of your Amazon EC2 Instance from the local DNS to the Public DNS:</p>
+<blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">hostname</span> <span class="token variable">${publichost}</span>
+
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf /etc/hostname
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${publichost}</span>"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hostname <span class="token operator">&gt;</span> /dev/null
+<span class="token function">sudo</span> <span class="token function">chown</span> root /etc/hostname
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+</blockquote>
+<h5>Configure the /etc/hosts file</h5>
+<p>Execute the following code to create a local variable to store your Public Amazon EC2 Instance DNS:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash">publichost<span class="token operator">=</span>ec2-54-86-10-108.compute-1.amazonaws.com
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p><span style="font-size: 1rem;">Once you have completed the IP addresses, execute the code:</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf /etc/hosts
+<span class="token keyword">echo</span> -e <span class="token string">"127.0.0.1\tlocalhost"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"127.0.1.1\t<span class="token variable">${publichost}</span>"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${NameNodeIP}</span>\thadoop-master"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${DataNode001IP}</span>\tDataNode001"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${DataNode002IP}</span>\tDataNode002"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${DataNode003IP}</span>\tDataNode003"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"\n# The following lines are desirable for IPv6 capable hosts"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"::1 ip6-localhost ip6-loopback"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"fe00::0 ip6-localnet"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"ff00::0 ip6-mcastprefix"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"ff02::1 ip6-allnodes"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"ff02::2 ip6-allrouters"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"ff02::3 ip6-allhosts"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/hosts <span class="token operator">&gt;</span> /dev/null
+<span class="token function">sudo</span> <span class="token function">chown</span> root /etc/hosts
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Reboot your Amazon EC2 Instances to initialize your new <code>etc/hosts</code> file.</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>&nbsp;</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3423">01.06.07 Connect and Install Passwordless SSH using ~/.ssh/.config, PEM and PPK files <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3423"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Connect and Install Passwordless SSH using PEM and PPK files</h4>
+<h5>Convert Public Key to Private Key using puTTY</h5>
+<p style="text-align: center;"><iframe src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/lRQqR0Fm1oE(1).html" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h5>Build an SSH .config file</h5>
+<p><strong>HostName</strong> - entry is the Public DNS IPV4 value for your Amazon EC2 instance.</p>
+<p><strong>User</strong> - the default user name for your Amazon EC2 Ubuntu instance is <code>ubuntu</code></p>
+<p><strong>IdentityFile</strong> - the Key Pair (.pem) file you created while setting up your instances</p>
+<p>Open a text editor and enter the following:</p>
+<p>Modify the HostName for each entry in your .config file to match your Amazon EC2 Instances</p>
+<div class="code-toolbar"><pre class=" language-text"><code class=" language-text">Host 0.0.0.0
+  HostName ec2-34-227-205-116.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-clusterkeypair.pem
+Host hadoop-master
+  HostName ec2-34-227-205-116.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-clusterkeypair.pem
+Host DataNode001
+  HostName ec2-34-207-108-211.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-clusterkeypair.pem
+Host DataNode002
+  HostName ec2-52-91-241-213.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-clusterkeypair.pem
+Host DataNode003
+  HostName ec2-52-55-203-83.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile ~/.ssh/hadoop-clusterkeypair.pem</code></pre><div class="toolbar"><div class="toolbar-item"><span>Text</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Save the file as "<code>config</code>" with no file extension.</p>
+<p>Copy the <code>config</code> file and your <code>hadoop-clusterkeypair.pem</code> file to your <code>~/.ssh</code> folder on each of your Nodes using <a href="https://winscp.net/eng/download.php" target="_blank" rel="noopener" aria-label="lessonLinks">WinSCP</a>.</p>
+<p>If you choose, execute this code with your modified HostName entries:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/config
+
+<span class="token keyword">echo</span> -e <span class="token string">"Host 0.0.0.0"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  HostName <span class="token variable">${NameNodeDNS}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  User ubuntu"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  IdentityFile <span class="token variable">${IdentityFile}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"Host hadoop-master"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  HostName <span class="token variable">${NameNodeDNS}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  User ubuntu"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  IdentityFile <span class="token variable">${IdentityFile}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"Host DataNode001"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  HostName <span class="token variable">${DataNode001DNS}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  User ubuntu"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  IdentityFile <span class="token variable">${IdentityFile}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"Host DataNode002"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  HostName <span class="token variable">${DataNode002DNS}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  User ubuntu"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  IdentityFile <span class="token variable">${IdentityFile}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"Host DataNode003"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  HostName <span class="token variable">${DataNode003DNS}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  User ubuntu"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"  IdentityFile <span class="token variable">${IdentityFile}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append ~/.ssh/config <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/config
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 <span class="token variable">${IdentityFile}</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Once you have copied the files you'll need to set a permission level of <code>0400</code> to both of these files on each of the Nodes:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/config
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/hadoop-clusterkeypair.pem</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Attempt to ssh into each Node from NameNode</p>
+<blockquote>
+<p>NOTE: <em>Remember to exit from each Node after executing this command</em></p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no hadoop-master</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode001</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode002</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode003</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>The result of this command will look something like the following:</p>
+<div class="code-toolbar"><pre class=" language-text"><code class=" language-text">The authenticity of host 'ec2-34-227-205-116.compute-1.amazonaws.com (172.31.31.127)' can't be established.
+ECDSA key fingerprint is SHA256:BvMyZDBxj5zZ8rldAr4ws1WaC/i6kc+xdUnJqcm1SVY.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-34-227-205-116.compute-1.amazonaws.com,172.31.31.127' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-1044-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+21 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Mon Jan  8 00:53:27 2018 from 99.255.142.148</code></pre><div class="toolbar"><div class="toolbar-item"><span>Text</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console#putty-prereqs" title="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console#putty-prereqs" target="_blank">Connecting to Your Linux Instance from Windows Using PuTTY - http://docs.aws.amazon.com/AWSEC2/latest/UserGuide...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 2: Setup puTTY and WinSCP to connect to Amazon Hadoop Cluster - YouTube - https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/Ynt4FNSoS-c" title="https://youtu.be/Ynt4FNSoS-c" target="_blank">Hadoop Part 3 - Install Passwordless SSH on VMWare - YouTube - https://youtu.be/Ynt4FNSoS-c</a>
+                </li>
+                <li>
+                    <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" title="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">puTTY Download - http://www.chiark.greenend.org.uk/~sgtatham/putty/...</a>
+                </li>
+                <li>
+                    <a href="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" title="http://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file" target="_blank">Simplify Your Life With an SSH Config File - http://nerderati.com/2011/03/17/simplify-your-life...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+                <li>
+                    <a href="http://linux.die.net/man/5/ssh_config" title="http://linux.die.net/man/5/ssh_config" target="_blank">ssh_config(5): OpenSSH SSH client config files - Linux man page - http://linux.die.net/man/5/ssh_config</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3429">01.06.09 Configure Passwordless SSH on Amazon EC2 Instances <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3429"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <h4>Configure Passwordless SSH on Amazon EC2 Instances</h4>
+<p>Review the <a href="http://klasserom.azurewebsites.net/Lessons/Binder/1939#CourseStrand_3379" target="_blank" rel="noopener">Passwordless SSH Single Node installation</a> instructions before going further.&nbsp;</p>
+<p>The following commands will copy the Public Key to each of the Data Nodes.</p>
+<p>Execute the following commands from the Master Node to generate a Public Key:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/id_rsa*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/known_hosts
+
+ssh-keygen -f ~/.ssh/id_rsa -t rsa -P <span class="token string">""</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Set the security permissions on the ~/.ssh/id_rsa.pub file</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 0600 ~/.ssh/id_rsa.pub
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Copy the key file to each of the NameNodes:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">&gt;&gt;</span> ~/.ssh/authorized_keys</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Copy the keys for the Node the fast way:</p>
+<blockquote>
+<p>NOTE: Copy this code to a text file and modify the <strong>IP addresses</strong> to match your cluster!</p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hosts<span class="token operator">=</span>0.0.0.0,127.0.0.1,127.0.1.1,hadoop-master,DataNode001,DataNode002,DataNode003
+ssh-keyscan -H <span class="token variable">${hosts}</span> <span class="token operator">&gt;&gt;</span> ~/.ssh/known_hosts
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Copy security keys to each of the Nodes in your cluster:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode001 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode002 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode003 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Attempt to SSH into each of your Nodes:</p>
+<blockquote>
+<p>NOTE:&nbsp;<em>Remember to <strong>exit</strong> from each Node after executing these commands</em></p>
+</blockquote>
+<p>&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no localhost
+<span class="token keyword">exit</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no hadoop-master
+<span class="token keyword">exit</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode001
+<span class="token keyword">exit</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode002
+<span class="token keyword">exit</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode003
+<span class="token keyword">exit</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>If something went wrong during your SSH setup, run the following code to reset SSH and start over:</p>
+<p>&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash">filename<span class="token operator">=</span>~/.ssh/authorized_keys
+line<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">head</span> -1 $<span class="token punctuation">{</span>filename<span class="token punctuation">}</span><span class="token variable">)</span></span>
+<span class="token keyword">echo</span> <span class="token variable">$line</span>
+
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">${filename}</span>
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${line}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append <span class="token variable">${filename}</span> <span class="token operator">&gt;</span> /dev/null
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 <span class="token variable">${filename}</span>
+
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/id_rsa*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/known_hosts
+ssh-keygen  -f ~/.ssh/id_rsa -t rsa -P <span class="token string">""</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 ~/.ssh/id_rsa.pub
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">&gt;&gt;</span> ~/.ssh/authorized_keys
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 ~/.ssh/authorized_keys
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/config
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/hadoop-clusterkeypair.pem
+
+hosts<span class="token operator">=</span>0.0.0.0,127.0.0.1,127.0.1.1,hadoop-master,DataNode001,DataNode002,DataNode003
+ssh-keyscan -H <span class="token variable">${hosts}</span> <span class="token operator">&gt;&gt;</span> ~/.ssh/known_hosts
+
+<span class="token function">sudo</span> <span class="token function">service</span> <span class="token function">ssh</span> restart</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>&nbsp;</p>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" title="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" target="_blank">Hadoop Cluster Setup - http://hadoop.apache.org/docs/current/hadoop-proje...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" title="https://en.wikipedia.org/wiki/Public-key_cryptography" target="_blank">Public-key cryptography - https://en.wikipedia.org/wiki/Public-key_cryptogra...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3377">01.06.10 Install Java Developers Kit (JDK) <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3377"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Install Java Developers Kit (JDK)</h4>
+<h5>Update packages on the server</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> -y update</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Install JDK</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> -y <span class="token function">install</span> default-jdk</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Confirm the Java install location and copy the location</h5>
+<p>This command will install Java into the&nbsp;<span class="code">/usr/lib/jvm/java-x-openjdk-amd64</span>.&nbsp; A link folder is also created that references the Java install folder.&nbsp; You will use the link folder location to set up the Environment Variables.&nbsp;</p>
+<p>Navigate to the folder location using:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">cd</span> /usr/lib/jvm/</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Here you should see a folder that looks something like this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">/usr/lib/jvm/default-java</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Add Environment Variables to /etc/profile.d/bigdata.sh</h5>
+<p>Open the file /etc/profile.d/bigdata.sh</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit /etc/profile.d/bigdata.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Add these lines to the end of the file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">export</span> JAVA_HOME<span class="token operator">=</span>/usr/lib/jvm/default-java
+PATH<span class="token operator">=</span><span class="token variable">$PATH</span><span class="token keyword">:</span><span class="token variable">$JAVA_HOME</span>/bin</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Or, push with code:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token string">"# JAVA Variables START"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"export JAVA_HOME=/usr/lib/jvm/default-java"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"PATH=\<span class="token variable">$PATH</span>:\<span class="token variable">$JAVA_HOME</span>/bin"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token keyword">echo</span> <span class="token string">"# JAVA Variables END"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Confirm that your Java variables were added, open the&nbsp;/etc/profile.d/bigdata.sh file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit /etc/profile.d/bigdata.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Reboot to instantiate to environment variables</h5>
+<div class="code-toolbar"><pre class=" language-markup"><code class=" language-markup">sudo reboot</code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4>Confirm the Java Version and Environment Variables</h4>
+<h5>Java Version Check</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">java -version</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Displays something similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">openjdk version <span class="token string">"1.8.0_131"</span>
+
+OpenJDK Runtime Environment <span class="token punctuation">(</span>build 1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11<span class="token punctuation">)</span>
+
+OpenJDK 64-Bit Server VM <span class="token punctuation">(</span>build 25.131-b11, mixed mode<span class="token punctuation">)</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Environment Variable Check</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token variable">$JAVA_HOME</span> </code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Displays something similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">/usr/lib/jvm/default-java</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p class="code">&nbsp;</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3386">01.06.12 Disable IPv6 <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3386"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <h5>Disable IPv6</h5>
+<p>Some versions of Hadoop require the IPv6 is disabled.&nbsp; Currently 2.9.0 does not require this.</p>
+<p>Open&nbsp;<code style="font-size: 14.4px;">hadoop-env.sh</code>&nbsp;for editing we'll add the following lines:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/hadoop-env.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>For more information on IPv6 see this link&nbsp;<a href="https://en.wikipedia.org/wiki/IPv6" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/IPv6</a></p>
+<p>Add the following line at the bottom of the file&nbsp;<span style="font-size: 1rem;">to disable&nbsp;</span><code style="font-size: 14.4px;">IPv6</code>:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash">HADOOP_OPTS<span class="token operator">=</span>-Djava.net.preferIPv4Stack<span class="token operator">=</span>true</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Save the file and close.</p>
+<h6 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Edit /etc/sysctl.conf to add addition configuration for disabling IPv6</h6>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> ubuntu /etc/sysctl.conf</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit /etc/sysctl.conf</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Add these lines to the end of the file:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token comment"># IPv6 configuration</span>
+net.ipv6.conf.all.disable_ipv6 <span class="token operator">=</span> 1
+net.ipv6.conf.default.disable_ipv6 <span class="token operator">=</span> 1
+net.ipv6.conf.lo.disable_ipv6 <span class="token operator">=</span> 1</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> root /etc/sysctl.conf</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Or, execute the following script:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token string">"# IPv6 configuration"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/sysctl.conf <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> <span class="token string">"net.ipv6.conf.all.disable_ipv6 = 1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/sysctl.conf <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> <span class="token string">"net.ipv6.conf.default.disable_ipv6 = 1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/sysctl.conf <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> <span class="token string">"net.ipv6.conf.lo.disable_ipv6 = 1"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/sysctl.conf <span class="token operator">&gt;</span> /dev/null</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h6 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Confirm that IPv6 is disabled:</h6>
+<p>Reload configuration for&nbsp;<code style="font-size: 14.4px;">sysctl.conf</code></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> sysctl -p</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Check IPv6 is disabled typing</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">cat</span> /proc/sys/net/ipv6/conf/all/disable_ipv6</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Response:</p>
+<p>0 – means that IPv6 is enabled.<br>1 – means that IPv6 is disable.&nbsp;<em>This is what we expect.</em></p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3380">01.06.13 Install and Configure Hadoop on Single Node Cluster <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3380"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h3 id="mcetoc_1c3r54thv0">Install and Configure Hadoop on Single Node Cluster</h3>
+<p>Watch this video for a full demonstration:</p>
+<p style="text-align: center;"><iframe src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/bX6115OTtFY.html" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h4 id="mcetoc_1c3r54thv1">Download Hadoop from Apache</h4>
+<p>Consider using this link to find the appropriate Hadoop download&nbsp;<a title="Hadoop Downloads" href="http://apache.forsale.plus/hadoop/common/" target="_blank" rel="noopener">http://apache.forsale.plus/hadoop/common/</a></p>
+<blockquote>
+<p>The current version may be higher, this tutorial was tested on 2.9.0.</p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">wget</span> <a class="token url-link" href="http://apache.forsale.plus/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz">http://apache.forsale.plus/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz</a> -P ~/Downloads/Hadoop</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thv2">Uncompress the Hadoop tar file into the /usr/local folder</h4>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">tar</span> -zxvf ~/Downloads/Hadoop/hadoop-*.tar.gz -C /usr/local</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thv3">Move all Hadoop related file from /usr/local to /usr/local/hadoop</h4>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">mv</span> /usr/local/hadoop-* /usr/local/hadoop</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thv4">Set Environment Variables</h4>
+<p>Use this command to edit the&nbsp;<code>/etc/profile.d/bigdata.sh</code> file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit /etc/profile.d/bigdata.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Paste this code into your <code>/etc/profile.d/bigdata.sh</code> file:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">export</span> HADOOP_HOME<span class="token operator">=</span><span class="token string">"/usr/local/hadoop"</span>
+
+<span class="token function">export</span> HADOOP_CONF_DIR<span class="token operator">=</span><span class="token string">"<span class="token variable">${HADOOP_HOME}</span>/etc/hadoop"</span>
+
+<span class="token function">export</span> HADOOP_DATA_HOME<span class="token operator">=</span><span class="token string">"<span class="token variable">${HOME}</span>/hadoop_data/hdfs"</span>
+
+PATH<span class="token operator">=</span><span class="token variable">$PATH</span><span class="token keyword">:</span><span class="token variable">$HADOOP_HOME</span>/bin:<span class="token variable">$HADOOP_HOME</span>/sbin
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Or, run this script from the command line:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"# HADOOP Variables START"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"export HADOOP_HOME='/usr/local/hadoop'"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"export HADOOP_CONF_DIR=\"\<span class="token variable">${HADOOP_HOME}</span>/etc/hadoop\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"export HADOOP_DATA_HOME=\"\<span class="token variable">${HOME}</span>/hadoop_data/hdfs\""</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"PATH=\<span class="token variable">$PATH</span>:\<span class="token variable">$HADOOP_HOME</span>/bin:\<span class="token variable">$HADOOP_HOME</span>/sbin"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">"# HADOOP Variables END"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thv5">Instantiate Environment Variables</h5>
+<p>The following command will instantiate the new variables available immediately.&nbsp; You can use this method to&nbsp;<span style="font-size: 1rem;">instantiate</span><span style="font-size: 1rem;">&nbsp;variable in any of the modified files in this tutorial:</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">source</span> /etc/profile.d/bigdata.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thv6">Test the Variables</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>This command should result in the following output:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">/usr/local/hadoop</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Reboot your system for changes to take effect</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>NOTE: For <strong>Amazon EC2</strong> Reboot your Instances</p>
+<h5 id="mcetoc_1c3r54thv7">Login as your Hadoop User</h5>
+<p>Once you have rebooted your virtual machine, login with the new <code>hduser</code> account or the User account you have set up for Hadoop usage.</p>
+<p><span style="font-size: 1rem;">NOTE:</span><span style="font-size: 1rem;">&nbsp;</span>On <strong>Amazon EC2</strong> this user is <code>ubuntu</code>.</p>
+<h5 id="mcetoc_1c3r54thv8">Test Environment Variables</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Should produce a result that looks something like this</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">/usr/local/hadoop</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thv9">Test Hadoop Version</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hadoop version </code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>This should produce a result similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">Hadoop 2.9.0
+Subversion <a class="token url-link" href="https://git-wip-us.apache.org/repos/asf/hadoop.git">https://git-wip-us.apache.org/repos/asf/hadoop.git</a> -r 756ebc8394e473ac25feac05fa493f6d612e6c50
+Compiled by arsuresh on 2017-11-13T23:15Z
+Compiled with protoc 2.5.0
+From <span class="token function">source</span> with checksum 0a76a9a32a5257331741f8d5932f183
+This <span class="token function">command</span> was run using /usr/local/hadoop/share/hadoop/common/hadoop-common-2.9.0.jar</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thva">Build the Hadoop data directories</h4>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/datanode
+
+<span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/namenode
+
+<span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/tmp
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thvb">Hadoop Configuration Files</h4>
+<p>Modify permissions on the <code>HADOOP_CONF_DIR</code> to allow you to edit the configuration files:</p>
+<p>NOTE: You do not need to execute this on Amazon EC2 Instances</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> root -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Then&nbsp;<span style="font-size: 1rem;">set permissions to Read / Write</span></p>
+<p>NOTE: You do not need to execute this on Amazon EC2 Instances</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 777 -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvc">Add JAVA_HOME Variable to $HADOOP_CONF_DIR/hadoop-env.sh</h5>
+<p><span style="font-size: 1rem;">Use </span><code>gedit</code><span style="font-size: 1rem;">&nbsp;or the text editor in WinSCP to edit the file&nbsp;</span><code>$HADOOP_CONF_DIR/hadoop-env.sh</code></p>
+<p>NOTE: If you are running Amazon EC2 Instance, open this file using the WinSCP text editor</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/hadoop-env.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Locate the area that indicates the current JAVA_HOME variable. It should look something like this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">export</span> JAVA_HOME<span class="token operator">=</span><span class="token variable">${JAVA_HOME}</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Change the variable to look like this statement, this location should be the same as your <code>JAVA_HOME</code> environment variable:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">export</span> JAVA_HOME<span class="token operator">=</span>/usr/lib/jvm/default-java</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<blockquote>
+<p>NOTE: You can find your JAVA_HOME variable location using this command:</p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token variable">$JAVA_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvf">Get your Hostname (Computer Name or DNS)</h5>
+<p style="font-size: 17.6px;">Your Hostname identifies your computer to the network. It may be acceptable at times to use the keyword <span class="code">localhost</span> to refer to your computer name but more often in big systems it is preferable to use the DNS. You will use this DNS to refer to your computer in many of the Hadoop configuration files.</p>
+<p style="font-size: 17.6px;">To find your local DNS use the following command<span style="font-size: 17.6px;">:</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">hostname</span><span class="token variable">)</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Should display something like:</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">ubuntu</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvg">Modify $HADOOP_CONF_DIR/core-site.xml</h5>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Use this command to open the <code>core-site.xml</code> file</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/core-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Add the following lines to the configuration section of the&nbsp;<code><span class="code">core-site.xml</span></code>&nbsp;file.&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!--Custom Properties--&gt;</span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>thisnamenode<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>localhost<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>localhost may be replaced with a DNS that points to the NameNode.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>homefolder<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>/home/${user.name}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--Hadoop Properties--&gt;</span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>hadoop.tmp.dir<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>${homefolder}/hadoop_data/hdfs/tmp<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>A base for other temporary directories.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>fs.defaultFS<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>hdfs://${thisnamenode}:9000<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>localhost may be replaced with a DNS that points to the NameNode.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span> 
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.permissions<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span> 
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span> 
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvh"><span style="font-size: 1em;">Modify</span><span style="font-size: 1em;">&nbsp;</span>$HADOOP_CONF_DIR/yarn-site.xml</h5>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Use this command to open the&nbsp;<code style="font-size: 15.84px;">yarn-site.xml</code>&nbsp;file</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/yarn-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Add the following lines to the configuration section of the&nbsp;</span><code><span class="code" style="font-size: 17.6px;">yarn-site.xml</span></code><span style="font-size: 17.6px;">&nbsp;file.&nbsp;</span></p>
+<div class="code-toolbar"><pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>yarn.nodemanager.aux-services<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>mapreduce_shuffle<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span> 
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>mapred.job.tracker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>${thisnamenode}:9001<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token comment">&lt;!--&lt;property&gt;
+
+    &lt;name&gt;yarn.nodemanager.aux-services.mapreduce.shuffle.class&lt;/name&gt;
+
+    &lt;value&gt;org.apache.hadoop.mapred.ShuffleHandler&lt;/value&gt;
+
+  &lt;/property&gt;--&gt;</span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvi">Modify $HADOOP_CONF_DIR/mapred-site.xml</h5>
+<p style="font-size: 17.6px;">Copy the mapred-site.xml template and rename the new file mapred-site.xml edit configuration element</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">cp</span> <span class="token variable">$HADOOP_CONF_DIR</span>/mapred-site.xml.template <span class="token variable">$HADOOP_CONF_DIR</span>/mapred-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>You'll need to set the permissions of <code>mapred-site.xml</code> to <code>0644</code></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 644 <span class="token variable">$HADOOP_CONF_DIR</span>/mapred-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<blockquote>
+<p>NOTE: On Amazon EC2 execute the following command to return ownership of the file:</p>
+<p>Note the username, <code>ubuntu</code>. On a Virtual Machine you may be using <code>root</code>.</p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> ubuntu <span class="token variable">$HADOOP_CONF_DIR</span>/mapred-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Use this command to open the&nbsp;<code style="font-size: 15.84px;">mapred-site.xml</code>&nbsp;file</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/mapred-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p><span style="font-size: 17.6px;">Edit the configuration element in&nbsp;</span><span class="code" style="font-size: 17.6px;"><code>mapred-site.xml</code>.</span></p>
+<div class="code-toolbar"><pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>mapreduce.jobtracker.address<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>local<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>mapreduce.framework.name<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>yarn<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 id="mcetoc_1c3r54thvj">Modify $HADOOP_CONF_DIR/hdfs-site.xml</h5>
+<p>Use this command to open the&nbsp;<code>hdfs-site.xml</code>&nbsp;file</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/hdfs-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p><span style="font-size: 17.6px;">Edit the configuration element in&nbsp;</span><span class="code" style="font-size: 17.6px;"><code>hdfs-site.xml</code>.</span></p>
+<div class="code-toolbar"><pre class=" language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.replication<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>Default block replication.
+
+The actual number of replications can be specified when the file is created.
+
+The default is used if replication is not specified in create time.
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.namenode.name.dir<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>file://${homefolder}/hadoop_data/hdfs/namenode<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.datanode.data.dir<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>file://${homefolder}/hadoop_data/hdfs/datanode<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.permissions.enabled<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>false<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>If "true", enable permission checking in HDFS. If "false", permission checking is turned off, but all other behavior is unchanged. Switching from one parameter value to the other does not change the mode, owner or group of files or directories.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thvk">Return Ownership of the $HADOOP_HOME folder to root</h4>
+<p>We'll return the ownership back to root on all files in $HADOOP_HOME.&nbsp; We've make changes so let's just be sure:</p>
+<p>NOTE: You do not need to execute this on Amazon EC2 Instances</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> root -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thvl">Allow all users to have Read / Write access to your $HADOOP_HOME folder</h4>
+<p>Note: This is not a suggested Production practice.</p>
+<p>NOTE: You do not need to execute this on Amazon EC2 Instances</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 777 -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thvm">Format the HDFS</h4>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs namenode -format</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 id="mcetoc_1c3r54thvn">Reboot</h4>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">reboot</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://hadoop.apache.org/docs/r2.9.0/api/org/apache/hadoop/conf/Configuration.html" title="https://hadoop.apache.org/docs/r2.9.0/api/org/apache/hadoop/conf/Configuration.html" target="_blank">Configuration (Apache Hadoop Main 2.9.0 API) - https://hadoop.apache.org/docs/r2.9.0/api/org/apac...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3395">01.06.15 Install Hadoop on all Slave Nodes <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3395"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Install Hadoop on all Slave Nodes</h4>
+<p>Follow these instructions the setup <a href="http://klasserom.azurewebsites.net/CourseStrands/Binder/3380" target="_blank" rel="noopener">Hadoop on Single Node Cluster</a>. Ensure that you have a fully functional Single-Node Hadoop cluster running on each Node.</p>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" title="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" target="_blank">Hadoop Cluster Setup - http://hadoop.apache.org/docs/current/hadoop-proje...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" title="https://en.wikipedia.org/wiki/Public-key_cryptography" target="_blank">Public-key cryptography - https://en.wikipedia.org/wiki/Public-key_cryptogra...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3428">01.06.16 Configure Hadoop on Multiple Node Cluster <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3428"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Configure Hadoop on Multiple Node Cluster</h4>
+<p>Confirm that the following configuration settings are available on your NameNode. Once you have completed these steps, run the <code>scp</code> command at the bottom of this section to copy the configuration files to each Node.</p>
+<h5 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Modify $HADOOP_CONF_DIR/core-site.xml</h5>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Use this command to open the&nbsp;<code style="font-size: 15.84px;">core-site.xml</code>&nbsp;file</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/core-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Add the following lines to the configuration section of the&nbsp;<code style="font-size: 15.84px;"><span class="code">core-site.xml</span></code>&nbsp;file.&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-markup" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-markup">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>thisnamenode<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>hadoop-master<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>NameNode is the hostname specified in the config file and etc/hosts file. It may be replaced with a DNS that points to your NameNode.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;"><span style="font-size: 1em;">Modify</span><span style="font-size: 1em;">&nbsp;</span>$HADOOP_CONF_DIR/yarn-site.xml</h5>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Use this command to open the&nbsp;<code style="font-size: 15.84px;">yarn-site.xml</code>&nbsp;file</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/yarn-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;"><span style="font-size: 17.6px;">Add the following lines to the configuration section of the&nbsp;</span><code style="font-size: 15.84px;"><span class="code" style="font-size: 17.6px;">yarn-site.xml</span></code><span style="font-size: 17.6px;">&nbsp;file.&nbsp;</span></p>
+<div class="code-toolbar"><pre class=" language-markup" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-markup">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>mapred.job.tracker<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>${thisnamenode}:9001<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Modify $HADOOP_CONF_DIR/hdfs-site.xml</h4>
+<p>Use this command to open the&nbsp;<code style="font-size: 14.4px;">hdfs-site.xml</code>&nbsp;file</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/hdfs-site.xml</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p><span style="font-size: 17.6px;">Edit the configuration element in&nbsp;</span><span class="code" style="font-size: 17.6px;"><code style="font-size: 15.84px;">hdfs-site.xml</code>.</span></p>
+<div class="code-toolbar"><pre class=" language-markup" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-markup">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>property</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>dfs.replication<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>name</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>value</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>description</span><span class="token punctuation">&gt;</span></span>Default block replication.
+
+The actual number of replications can be specified when the file is created.
+
+The default is used if replication is not specified in create time.
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>description</span><span class="token punctuation">&gt;</span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>property</span><span class="token punctuation">&gt;</span></span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Markup</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h4 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Return Ownership of the $HADOOP_HOME folder to root</h4>
+<p>We'll return the ownership back to root on all files in $HADOOP_HOME.&nbsp; We've make changes so let's just be sure:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> root -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<blockquote>
+<p>NOTE: This is not needed on Amazon EC2 instances</p>
+</blockquote>
+<h4 style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, &#39;Helvetica Neue&#39;, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;; color: #212529;">Allow all users to have Read / Write access to your $HADOOP_HOME folder</h4>
+<p>Note: This is not a suggested Production practice.</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> 777 -R <span class="token variable">$HADOOP_HOME</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Copy configuration files to all Nodes</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">cd</span> <span class="token variable">$HADOOP_CONF_DIR</span>
+<span class="token function">scp</span> hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode001:<span class="token variable">$HADOOP_CONF_DIR</span>
+<span class="token function">scp</span> hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode002:<span class="token variable">$HADOOP_CONF_DIR</span>
+<span class="token function">scp</span> hadoop-env.sh core-site.xml hdfs-site.xml mapred-site.xml DataNode003:<span class="token variable">$HADOOP_CONF_DIR</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" title="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" target="_blank">Hadoop Cluster Setup - http://hadoop.apache.org/docs/current/hadoop-proje...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+                <li>
+                    <a href="https://www.tutorialspoint.com/hadoop/hadoop_multi_node_cluster.htm" title="https://www.tutorialspoint.com/hadoop/hadoop_multi_node_cluster.htm" target="_blank">Tutorialspoint - Hadoop - Multi Node Cluster - https://www.tutorialspoint.com/hadoop/hadoop_multi...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3396">01.06.19 Configure .masters File <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3396"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Configuring Master Node</h5>
+<p>Create the <code>masters</code> file if it does not exist. <em>Only on your NameNode and SecondaryNameNode, not Slaves</em>.</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">touch</span> <span class="token variable">$HADOOP_CONF_DIR</span>/masters</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Add the DNS of your Master Node</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hadoop-master
+DataNode001</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<blockquote>
+<p>NOTE: On Amazon EC2 this is <code>NameNode</code>. These entries will ensure that hadoop-master (NameNode) and DataNode001 (SecondaryNameNode) are master nodes.</p>
+</blockquote>
+<p>Execute this code to add the entry for you:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_CONF_DIR</span>/masters
+
+<span class="token keyword">echo</span> -e <span class="token string">"hadoop-master"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append <span class="token variable">$HADOOP_CONF_DIR</span>/masters <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"DataNode001"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append <span class="token variable">$HADOOP_CONF_DIR</span>/masters <span class="token operator">&gt;</span> /dev/null
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Set ownership and permissions to the root (<code>ubuntu</code> on Amazon EC2 or <code>root</code> on VMWare) owner:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> ubuntu <span class="token variable">$HADOOP_CONF_DIR</span>/masters
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0644 <span class="token variable">$HADOOP_CONF_DIR</span>/masters</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Copy the <code>masters</code> file to your SecondaryNameNode</p>
+<p>NOTE: We are using <code>DataNode001</code> as our SecondaryNameNode</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">scp</span> <span class="token variable">$HADOOP_CONF_DIR</span>/masters DataNode001:<span class="token variable">$HADOOP_CONF_DIR</span></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" title="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" target="_blank">Hadoop Cluster Setup - http://hadoop.apache.org/docs/current/hadoop-proje...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" title="https://en.wikipedia.org/wiki/Public-key_cryptography" target="_blank">Public-key cryptography - https://en.wikipedia.org/wiki/Public-key_cryptogra...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3397">01.06.20 Configure .slaves File <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3397"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Configure .slaves File</h5>
+<p>Edit the <code>slaves&nbsp;</code>file and copy it to each DataNode in your cluster.</p>
+<p>Open the slaves file for editing:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> gedit <span class="token variable">$HADOOP_CONF_DIR</span>/slaves</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Add the entries for the Data Nodes:</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash">DataNode001
+DataNode002
+DataNode003</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Or, execute this following script:</p>
+<blockquote>
+<p>NOTE: Confirm the entries after executing this script</p>
+</blockquote>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_CONF_DIR</span>/slaves
+<span class="token keyword">echo</span> -e <span class="token string">"DataNode001"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append <span class="token variable">$HADOOP_CONF_DIR</span>/slaves <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"DataNode002"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append <span class="token variable">$HADOOP_CONF_DIR</span>/slaves <span class="token operator">&gt;</span> /dev/null
+<span class="token keyword">echo</span> -e <span class="token string">"DataNode003"</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append <span class="token variable">$HADOOP_CONF_DIR</span>/slaves <span class="token operator">&gt;</span> /dev/null
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Set ownership and permissions</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">chown</span> ubuntu <span class="token variable">$HADOOP_CONF_DIR</span>/slaves
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0644 <span class="token variable">$HADOOP_CONF_DIR</span>/slaves</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Copy the slaves file to each Node in your cluster</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">scp</span> <span class="token variable">$HADOOP_CONF_DIR</span>/slaves DataNode001:<span class="token variable">$HADOOP_CONF_DIR</span>
+<span class="token function">scp</span> <span class="token variable">$HADOOP_CONF_DIR</span>/slaves DataNode002:<span class="token variable">$HADOOP_CONF_DIR</span>
+<span class="token function">scp</span> <span class="token variable">$HADOOP_CONF_DIR</span>/slaves DataNode003:<span class="token variable">$HADOOP_CONF_DIR</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" title="http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/ClusterSetup.html" target="_blank">Hadoop Cluster Setup - http://hadoop.apache.org/docs/current/hadoop-proje...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/Public-key_cryptography" title="https://en.wikipedia.org/wiki/Public-key_cryptography" target="_blank">Public-key cryptography - https://en.wikipedia.org/wiki/Public-key_cryptogra...</a>
+                </li>
+                <li>
+                    <a href="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" title="https://blog.insightdatascience.com/spinning-up-a-free-hadoop-cluster-step-by-step-c406d56bae42#.v9rl8wrle" target="_blank">Spinning Up a Free Hadoop Cluster on Amazon AWS: Step by Step - https://blog.insightdatascience.com/spinning-up-a-...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3426">01.06.21 Format Your Multi-Node Hadoop Cluster <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3426"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Format Your Multi-Node Hadoop Cluster</h5>
+<p><span style="font-size: 1rem;">Recall that you have already formatted your Hadoop Cluster as a Single Node Cluster.&nbsp; This means that the HDFS on each Node will not match with the new Cluster.&nbsp; You will need to remove the hadoop_data directory from each Node:</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_DATA_HOME</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>It is a good idea to reset your log directory too:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_HOME</span>/logs
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>On your NameNode execute the following code to reformat your Hadoop Cluster:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs namenode -format</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Confirm from the output that there are no errors. Review logs to ensure your cluster is formatted as expected&nbsp;<code>/usr/local/hadoop/logs</code>.</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3431">01.06.22 Reset all settings in your cluster <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3431"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <h4>Reset all settings in your cluster</h4>
+<p>If something has gone terribly wrong, use the following code to reset parts of your cluster:</p>
+<h5>Reset SSH</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">filename<span class="token operator">=</span>~/.ssh/authorized_keys
+line<span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">head</span> -1 $<span class="token punctuation">{</span>filename<span class="token punctuation">}</span><span class="token variable">)</span></span>
+<span class="token keyword">echo</span> <span class="token variable">$line</span>
+
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">${filename}</span>
+<span class="token keyword">echo</span> -e <span class="token string">"<span class="token variable">${line}</span>"</span> <span class="token operator">|</span> <span class="token function">tee</span> --append <span class="token variable">${filename}</span> <span class="token operator">&gt;</span> /dev/null
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 <span class="token variable">${filename}</span>
+
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/id_rsa*
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf ~/.ssh/known_hosts
+ssh-keygen  -f ~/.ssh/id_rsa -t rsa -P <span class="token string">""</span>
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 ~/.ssh/id_rsa.pub
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">&gt;&gt;</span> ~/.ssh/authorized_keys
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0600 ~/.ssh/authorized_keys
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/config
+<span class="token function">sudo</span> <span class="token function">chmod</span> 0400 ~/.ssh/hadoop-clusterkeypair.pem
+
+hosts<span class="token operator">=</span>0.0.0.0,127.0.0.1,127.0.1.1,hadoop-master,DataNode001,DataNode002,DataNode003
+ssh-keyscan -H <span class="token variable">${hosts}</span> <span class="token operator">&gt;&gt;</span> ~/.ssh/known_hosts
+
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode001 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode002 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+<span class="token function">sudo</span> <span class="token function">cat</span> ~/.ssh/id_rsa.pub <span class="token operator">|</span> <span class="token function">ssh</span> -o StrictHostKeyChecking<span class="token operator">=</span>no DataNode003 <span class="token string">'cat &gt;&gt; ~/.ssh/authorized_keys'</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Reset Hadoop Installation Cluster Files and Directories</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_DATA_HOME</span>
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_HOME</span>/hadoop_data
+<span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_HOME</span>/logs
+<span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/namenode
+<span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/datanode
+<span class="token function">mkdir</span> -p <span class="token variable">$HADOOP_DATA_HOME</span>/tmp
+<span class="token function">chmod</span> -R 755 <span class="token variable">$HADOOP_DATA_HOME</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Delete Hadoop</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf <span class="token variable">$HADOOP_HOME</span>
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h5>Reset bigdata.sh</h5>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">rm</span> -rf /etc/profile.d/bigdata.sh
+<span class="token function">sudo</span> <span class="token function">touch</span> /etc/profile.d/bigdata.sh
+
+<span class="token function">sudo</span> <span class="token function">chmod</span> +x /etc/profile.d/bigdata.sh
+<span class="token function">sudo</span> <span class="token keyword">echo</span> -e <span class="token string">'# Environment Variables for Big Data tools\n'</span> <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">tee</span> --append /etc/profile.d/bigdata.sh <span class="token operator">&gt;</span> /dev/null
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>&nbsp;</p>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3383">01.06.30 Start up your Hadoop Cluster <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3383"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Starting up the Hadoop Cluster!</h5>
+<p>Execute the following code from you NameNode only.</p>
+<h6>Start All Hadoop Services</h6>
+<p style="font-size: 17.6px;">This command will start all Hadoop services however, it will be deprecated soon.</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">start-all.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h6>Start the DFS service</h6>
+<p>If you choose to start the DFS separately, use this command:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">start-dfs.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Browse the NameNode in your Web Browser, change&nbsp;localhost&nbsp;to your NameNode DNS or IP Address</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><a class="token url-link" href="http://localhost:50070/">http://localhost:50070</a></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Try it now&nbsp;<a href="http://localhost:50070/" target="_blank" rel="noopener">http://localhost:50070</a></p>
+<p>On Amazon EC2 Instances your URL my look like this:</p>
+<p>&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><a class="token url-link" href="http://ec2-54-158-115-185.compute-1.amazonaws.com:50070/">http://ec2-54-158-115-185.compute-1.amazonaws.com:50070</a></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h6>Start YARN on NameNode</h6>
+<p>Start yarn:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">start-yarn.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Start the History Server</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">mr-jobhistory-daemon.sh start historyserver</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Browse the ResourceManager in your Web Browser,&nbsp;<span style="font-size: 1rem;">change&nbsp;</span><span style="font-size: 1rem;">localhost</span><span style="font-size: 1rem;">&nbsp;to your NameNode DNS or IP Address</span></p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><a class="token url-link" href="http://localhost:8088/">http://localhost:8088</a></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Try it now&nbsp;<a href="http://localhost:8088/" target="_blank" rel="noopener">http://localhost:8088</a></p>
+<p>On Amazon EC2 Instances your URL my look like this:</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="code-toolbar"><pre class=" language-bash" style="font-size: 14.4px; word-spacing: 0px;"><code class=" language-bash"><a class="token url-link" href="http://ec2-54-158-115-185.compute-1.amazonaws.com:8088/">http://ec2-54-158-115-185.compute-1.amazonaws.com:8088</a></code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<h6>Confirm that Hadoop services are running</h6>
+<p style="font-size: 17.6px;">Run this command to display the currently running Java processes</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">jps</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Should produce a result similar this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">8065 SecondaryNameNode
+8243 ResourceManager
+8676 JobHistoryServer
+7877 DataNode
+7765 NameNode
+8717 Jps</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Check all ports used by Java</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token function">sudo</span> <span class="token function">netstat</span> -plten <span class="token operator">|</span> <span class="token function">grep</span> java</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>This should produce an output similar to the following:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">tcp        0      0 0.0.0.0:50070           0.0.0.0:*               LISTEN      1000       18803       1814/java
+tcp        0      0 0.0.0.0:50010           0.0.0.0:*               LISTEN      1000       19934       1972/java
+tcp        0      0 0.0.0.0:50075           0.0.0.0:*               LISTEN      1000       20222       1972/java
+tcp        0      0 0.0.0.0:50020           0.0.0.0:*               LISTEN      1000       20225       1972/java
+tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN      1000       18812       1814/java
+tcp        0      0 0.0.0.0:50090           0.0.0.0:*               LISTEN      1000       21596       2167/java
+tcp        0      0 127.0.0.1:39787         0.0.0.0:*               LISTEN      1000       19941       1972/java
+tcp6       0      0 :::45523                :::*                    LISTEN      1000       28034       2448/java
+tcp6       0      0 :::8088                 :::*                    LISTEN      1000       28033       2322/java
+tcp6       0      0 :::8030                 :::*                    LISTEN      1000       23241       2322/java
+tcp6       0      0 :::8031                 :::*                    LISTEN      1000       22685       2322/java
+tcp6       0      0 :::8032                 :::*                    LISTEN      1000       23247       2322/java
+tcp6       0      0 :::8040                 :::*                    LISTEN      1000       29126       2448/java
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Generate a Report from your Cluster</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfsadmin -report</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>The result should look similar to the following:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">Configured Capacity: 16518029312 <span class="token punctuation">(</span>15.38 GB<span class="token punctuation">)</span>
+Present Capacity: 10704764928 <span class="token punctuation">(</span>9.97 GB<span class="token punctuation">)</span>
+DFS Remaining: 10704715776 <span class="token punctuation">(</span>9.97 GB<span class="token punctuation">)</span>
+DFS Used: 49152 <span class="token punctuation">(</span>48 KB<span class="token punctuation">)</span>
+DFS Used%: 0.00%
+Under replicated blocks: 0
+Blocks with corrupt replicas: 0
+Missing blocks: 0
+Missing blocks <span class="token punctuation">(</span>with replication factor 1<span class="token punctuation">)</span>: 0
+Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes <span class="token punctuation">(</span>2<span class="token punctuation">)</span>:
+
+Name: 172.31.24.96:50010 <span class="token punctuation">(</span>ip-172-31-24-96.ec2.internal<span class="token punctuation">)</span>
+Hostname: ip-172-31-24-96.ec2.internal
+Decommission Status <span class="token keyword">:</span> Normal
+Configured Capacity: 8259014656 <span class="token punctuation">(</span>7.69 GB<span class="token punctuation">)</span>
+DFS Used: 24576 <span class="token punctuation">(</span>24 KB<span class="token punctuation">)</span>
+Non DFS Used: 2889826304 <span class="token punctuation">(</span>2.69 GB<span class="token punctuation">)</span>
+DFS Remaining: 5352386560 <span class="token punctuation">(</span>4.98 GB<span class="token punctuation">)</span>
+DFS Used%: 0.00%
+DFS Remaining%: 64.81%
+Configured Cache Capacity: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Used: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Remaining: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Mon Jan 08 00:15:34 UTC 2018
+Last Block Report: Mon Jan 08 00:15:07 UTC 2018
+
+
+Name: 172.31.30.70:50010 <span class="token punctuation">(</span>ip-172-31-30-70.ec2.internal<span class="token punctuation">)</span>
+Hostname: ip-172-31-30-70.ec2.internal
+Decommission Status <span class="token keyword">:</span> Normal
+Configured Capacity: 8259014656 <span class="token punctuation">(</span>7.69 GB<span class="token punctuation">)</span>
+DFS Used: 24576 <span class="token punctuation">(</span>24 KB<span class="token punctuation">)</span>
+Non DFS Used: 2889883648 <span class="token punctuation">(</span>2.69 GB<span class="token punctuation">)</span>
+DFS Remaining: 5352329216 <span class="token punctuation">(</span>4.98 GB<span class="token punctuation">)</span>
+DFS Used%: 0.00%
+DFS Remaining%: 64.81%
+Configured Cache Capacity: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Used: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Remaining: 0 <span class="token punctuation">(</span>0 B<span class="token punctuation">)</span>
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 1
+Last contact: Mon Jan 08 00:15:34 UTC 2018
+Last Block Report: Mon Jan 08 00:15:07 UTC 2018
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3382">01.06.50 Test the HDFS <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3382"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h5>Testing the HDFS</h5>
+<p style="font-size: 17.6px;">Create txt file in your local home folder</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token keyword">echo</span> <span class="token string">"Hello this will be my first distributed and fault-tolerant data set\!"</span> <span class="token operator">|</span> <span class="token function">cat</span> <span class="token operator">&gt;&gt;</span> my_file.txt</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">List the hdfs files</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -ls /</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Make a folder named <span class="code">user</span></p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -mkdir /user</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">List the hdfs files</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -ls /</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Copy the created file a few times</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -copyFromLocal ~/my_file.txt /user
+
+hdfs dfs -copyFromLocal ~/my_file.txt /user/my_file2.txt
+
+hdfs dfs -copyFromLocal ~/my_file.txt /user/my_file3.txt</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>List the files in the new folder</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -ls /user</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Remove the files with a name starting with my_file</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -rm /user/my_file*</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p style="font-size: 17.6px;">Remove the folder you</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -rmdir /user</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html" title="https://hadoop.apache.org/docs/r2.7.1/hadoop-project-dist/hadoop-common/FileSystemShell.html" target="_blank">HDFS Command Line - https://hadoop.apache.org/docs/r2.7.1/hadoop-proje...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3400">10.00.01 Example MapReduce on Hadoop <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3400"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display: none;"></i></a></h4>
+            <h4>Example MapReduce on Hadoop</h4>
+<p>Test that Hadoop can run MapReduce jobs:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hadoop jar <span class="token variable">$HADOOP_HOME</span>/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.jar</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>This will produce a result similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">An example program must be given as the first argument.
+Valid program names are:
+  aggregatewordcount: An Aggregate based map/reduce program that counts the words <span class="token keyword">in</span> the input files.
+  aggregatewordhist: An Aggregate based map/reduce program that computes the histogram of the words <span class="token keyword">in</span> the input files.
+  bbp: A map/reduce program that uses Bailey-Borwein-Plouffe to compute exact digits of Pi.
+  dbcount: An example job that count the pageview counts from a database.
+  distbbp: A map/reduce program that uses a BBP-type formula to compute exact bits of Pi.
+  grep: A map/reduce program that counts the matches of a regex <span class="token keyword">in</span> the input.
+  join: A job that effects a <span class="token function">join</span> over sorted, equally partitioned datasets
+  multifilewc: A job that counts words from several files.
+  pentomino: A map/reduce tile laying program to <span class="token function">find</span> solutions to pentomino problems.
+  pi: A map/reduce program that estimates Pi using a quasi-Monte Carlo method.
+  randomtextwriter: A map/reduce program that writes 10GB of random textual data per node.
+  randomwriter: A map/reduce program that writes 10GB of random data per node.
+  secondarysort: An example defining a secondary <span class="token function">sort</span> to the reduce.
+  sort: A map/reduce program that sorts the data written by the random writer.
+  sudoku: A sudoku solver.
+  teragen: Generate data <span class="token keyword">for</span> the terasort
+  terasort: Run the terasort
+  teravalidate: Checking results of terasort
+  wordcount: A map/reduce program that counts the words <span class="token keyword">in</span> the input files.
+  wordmean: A map/reduce program that counts the average length of the words <span class="token keyword">in</span> the input files.
+  wordmedian: A map/reduce program that counts the median length of the words <span class="token keyword">in</span> the input files.
+  wordstandarddeviation: A map/reduce program that counts the standard deviation of the length of the words <span class="token keyword">in</span> the input files.
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Start Hadoop HDFS and Resource Manager</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">start-all.sh</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Setup the environment for your application:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -mkdir -p /user/hduser/input
+hdfs dfs -chmod -R 777 /user
+hdfs dfs -put <span class="token variable">$HADOOP_HOME</span>/*.txt /user/hduser/input
+hdfs dfs -ls /user/hduser/input</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>This will produce a result similar to this:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">Found 3 items
+-rw-r--r--   1 hduser supergroup     106210 2017-12-06 13:58 /user/hduser/input/LICENSE.txt
+-rw-r--r--   1 hduser supergroup      15915 2017-12-06 13:58 /user/hduser/input/NOTICE.txt
+-rw-r--r--   1 hduser supergroup       1366 2017-12-06 13:58 /user/hduser/input/README.txt
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Run the Wordcount MapReduce job:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hadoop jar <span class="token variable">$HADOOP_HOME</span>/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.9.0.jar  wordcount /user/hduser/input /user/hduser/output</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>The should produce a result that looks similar to the following:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">17/12/06 14:06:20 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+17/12/06 14:06:24 INFO input.FileInputFormat: Total input files to process <span class="token keyword">:</span> 3
+17/12/06 14:06:24 INFO mapreduce.JobSubmitter: number of splits:3
+17/12/06 14:06:25 INFO Configuration.deprecation: yarn.resourcemanager.system-metrics-publisher.enabled is deprecated. Instead, use yarn.system-metrics-publisher.enabled
+17/12/06 14:06:25 INFO mapreduce.JobSubmitter: Submitting tokens <span class="token keyword">for</span> job: job_1512596939837_0002
+17/12/06 14:06:29 INFO impl.YarnClientImpl: Submitted application application_1512596939837_0002
+17/12/06 14:06:30 INFO mapreduce.Job: The url to track the job: <a class="token url-link" href="http://ubuntu:8088/proxy/application_1512596939837_0002/">http://ubuntu:8088/proxy/application_1512596939837_0002/</a>
+17/12/06 14:06:30 INFO mapreduce.Job: Running job: job_1512596939837_0002
+17/12/06 14:07:10 INFO mapreduce.Job: Job job_1512596939837_0002 running <span class="token keyword">in</span> uber mode <span class="token keyword">:</span> <span class="token boolean">false</span>
+17/12/06 14:07:10 INFO mapreduce.Job:  map 0% reduce 0%
+17/12/06 14:08:16 INFO mapreduce.Job:  map 33% reduce 0%
+17/12/06 14:08:19 INFO mapreduce.Job:  map 67% reduce 0%
+17/12/06 14:08:20 INFO mapreduce.Job:  map 100% reduce 0%
+17/12/06 14:08:35 INFO mapreduce.Job:  map 100% reduce 100%
+17/12/06 14:08:37 INFO mapreduce.Job: Job job_1512596939837_0002 completed successfully
+17/12/06 14:08:38 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read<span class="token operator">=</span>50653
+		FILE: Number of bytes written<span class="token operator">=</span>908579
+		FILE: Number of <span class="token function">read</span> operations<span class="token operator">=</span>0
+		FILE: Number of large <span class="token function">read</span> operations<span class="token operator">=</span>0
+		FILE: Number of <span class="token function">write</span> operations<span class="token operator">=</span>0
+		HDFS: Number of bytes read<span class="token operator">=</span>123837
+		HDFS: Number of bytes written<span class="token operator">=</span>36040
+		HDFS: Number of <span class="token function">read</span> operations<span class="token operator">=</span>12
+		HDFS: Number of large <span class="token function">read</span> operations<span class="token operator">=</span>0
+		HDFS: Number of <span class="token function">write</span> operations<span class="token operator">=</span>2
+	Job Counters 
+		Killed map tasks<span class="token operator">=</span>1
+		Launched map tasks<span class="token operator">=</span>3
+		Launched reduce tasks<span class="token operator">=</span>1
+		Data-local map tasks<span class="token operator">=</span>3
+		Total <span class="token function">time</span> spent by all maps <span class="token keyword">in</span> occupied slots <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>194319
+		Total <span class="token function">time</span> spent by all reduces <span class="token keyword">in</span> occupied slots <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>15197
+		Total <span class="token function">time</span> spent by all map tasks <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>194319
+		Total <span class="token function">time</span> spent by all reduce tasks <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>15197
+		Total vcore-milliseconds taken by all map tasks<span class="token operator">=</span>194319
+		Total vcore-milliseconds taken by all reduce tasks<span class="token operator">=</span>15197
+		Total megabyte-milliseconds taken by all map tasks<span class="token operator">=</span>198982656
+		Total megabyte-milliseconds taken by all reduce tasks<span class="token operator">=</span>15561728
+	Map-Reduce Framework
+		Map input records<span class="token operator">=</span>2461
+		Map output records<span class="token operator">=</span>17424
+		Map output bytes<span class="token operator">=</span>190556
+		Map output materialized bytes<span class="token operator">=</span>50665
+		Input <span class="token function">split</span> bytes<span class="token operator">=</span>346
+		Combine input records<span class="token operator">=</span>17424
+		Combine output records<span class="token operator">=</span>3125
+		Reduce input groups<span class="token operator">=</span>2851
+		Reduce shuffle bytes<span class="token operator">=</span>50665
+		Reduce input records<span class="token operator">=</span>3125
+		Reduce output records<span class="token operator">=</span>2851
+		Spilled Records<span class="token operator">=</span>6250
+		Shuffled Maps <span class="token operator">=</span>3
+		Failed Shuffles<span class="token operator">=</span>0
+		Merged Map outputs<span class="token operator">=</span>3
+		GC <span class="token function">time</span> elapsed <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>4999
+		CPU <span class="token function">time</span> spent <span class="token punctuation">(</span>ms<span class="token punctuation">)</span><span class="token operator">=</span>15100
+		Physical memory <span class="token punctuation">(</span>bytes<span class="token punctuation">)</span> snapshot<span class="token operator">=</span>877674496
+		Virtual memory <span class="token punctuation">(</span>bytes<span class="token punctuation">)</span> snapshot<span class="token operator">=</span>7798611968
+		Total committed heap usage <span class="token punctuation">(</span>bytes<span class="token punctuation">)</span><span class="token operator">=</span>603783168
+	Shuffle Errors
+		BAD_ID<span class="token operator">=</span>0
+		CONNECTION<span class="token operator">=</span>0
+		IO_ERROR<span class="token operator">=</span>0
+		WRONG_LENGTH<span class="token operator">=</span>0
+		WRONG_MAP<span class="token operator">=</span>0
+		WRONG_REDUCE<span class="token operator">=</span>0
+	File Input Format Counters 
+		Bytes Read<span class="token operator">=</span>123491
+	File Output Format Counters 
+		Bytes Written<span class="token operator">=</span>36040</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>Display the resulting output files</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash">hdfs dfs -cat /user/hduser/output/*</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+<p>The should produce a result that looks similar to the following:</p>
+<div class="code-toolbar"><pre class=" language-bash"><code class=" language-bash"><span class="token string">""</span>AS	2
+<span class="token string">"AS	22
+"</span>COPYRIGHTS	1
+<span class="token string">"Collective	1
+"</span>Contribution<span class="token string">"	2
+"</span>Contributor<span class="token string">"	2
+"</span>Derivative	2
+<span class="token string">"French	1
+"</span>GCC	1
+<span class="token string">"LICENSE"</span><span class="token punctuation">)</span>.	1
+<span class="token string">"Legal	1
+"</span>License<span class="token string">"	1
+"</span>License<span class="token string">");	3
+"</span>Licensed	1
+</code></pre><div class="toolbar"><div class="toolbar-item"><span>Bash</span></div><div class="toolbar-item"><a>Copy</a></div></div></div>
+            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html" title="http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html" target="_blank">Apache Hadoop 3.0.0-beta1 – MapReduce Tutorial - http://hadoop.apache.org/docs/current/hadoop-mapre...</a>
+                </li>
+                <li>
+                    <a href="http://www.eclipse.org/downloads" title="http://www.eclipse.org/downloads" target="_blank">Eclipse Download - http://www.eclipse.org/downloads</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop - MapReduce WordCount  - https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+        </ul>
+
+        </div>
+        <div class="lessonCourseStrand">
+            <h4 id="CourseStrand_3229">Final Project <a href="https://klasserom.azurewebsites.net/Lessons/Binder/1960#CourseStrand_3229"><i class="fa fa-flip-horizontal fa-paperclip" style="opacity: 0.5; display:none;"></i></a></h4>
+            <p>Install a Multi Node Hadoop Cluster&nbsp;on Amazon AWS</p>
+<ul>
+<li>Register an account with&nbsp;<a href="https://aws.amazon.com/" target="_blank" rel="noopener">Amazon AWS</a></li>
+<li>Watch the following videos and execute the steps detailed within. Take note that the videos are out of date with the version of Hadoop&nbsp;installed in class.&nbsp; Make the necessary&nbsp;adaptations to allow your cluster to be up-to-date and running a current version of Hadoop.<br>
+<ul>
+<li><a href="https://youtu.be/cr5RmnyWbYw" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 1: Setup AWS Amazon EC2 4 Node Cluster for Hadoop</a></li>
+<li><a href="https://youtu.be/lRQqR0Fm1oE" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 2: Setup puTTY and WinSCP to connect to Amazon Hadoop Cluster</a></li>
+<li><a href="https://youtu.be/u7fIf_R-gaM" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH</a></li>
+<li><a href="https://youtu.be/Z0cOE2SRo5c" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 4: Install Hadoop</a></li>
+<li><a href="https://youtu.be/PF1dUAKs_bg" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 5: NameNode Configuration</a></li>
+<li><a href="https://youtu.be/k-DGPIwfitM" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 6: DataNode Configuration</a></li>
+<li><a href="https://youtu.be/Z_5pJMCoeM8" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 7 - Starting up the HDFS YARN and JobHistory</a></li>
+<li><a href="https://youtu.be/X8Tn3FETqXw" target="_blank" rel="noopener">Hadoop on Amazon AWS Part 8 - Working with our own HDFS</a></li>
+</ul>
+</li>
+<li>Current instruction for Multi Node installation are available at the link below.&nbsp; These&nbsp;instructions will fill in any gaps in your install process.
+<ul>
+<li><a href="http://klasserom.azurewebsites.net/Lessons/Binder/1931" target="_blank" rel="noopener">http://klasserom.azurewebsites.net/Lessons/Binder/1931</a></li>
+</ul>
+</li>
+</ul>
+                <h4>Evaluation</h4>
+                <p class="small">Time to complete: 0 | Mark: 0</p>
+<ol>
+<li>Produce a Screen Capture video and post it to cloud service of your choice (YouTube, Google Cloud, Google Drive etc.)</li>
+<li>Provide a link to view the video</li>
+<li>Your video must include:
+<ol>
+<li>Execute commands on your&nbsp;<a href="http://klasserom.azurewebsites.net/Lessons/Binder/1931#CourseStrand_3383" target="_blank" rel="noopener">Hadoop&nbsp;HDFS</a></li>
+<li>Execute a&nbsp;<a href="http://klasserom.azurewebsites.net/Lessons/Binder/1931#CourseStrand_3400" target="_blank" rel="noopener">MapReduce application Word Count on your cluster</a></li>
+</ol>
+</li>
+</ol>            
+
+<label for="Linked_Resources">Linked Resources</label>        <ul>
+                <li>
+                    <a href="https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop - MapReduce WordCount  - https://youtu.be/gmSc9KwViFs?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/cr5RmnyWbYw?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/cr5RmnyWbYw?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 1: Setup AWS Amazon EC2 4 Node Cluster for Hadoop - YouTube - https://youtu.be/cr5RmnyWbYw?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 2: Setup puTTY and WinSCP to connect to Amazon Hadoop Cluster - YouTube - https://youtu.be/lRQqR0Fm1oE?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 3: Setup Passwordless SSH - YouTube - https://youtu.be/u7fIf_R-gaM?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/Z0cOE2SRo5c?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" title="https://youtu.be/Z0cOE2SRo5c?list=PLWsYJ2ygHmWhOvtHIPxGJDtki9SJlINCw" target="_blank">Hadoop on Amazon AWS Part 4: Install Hadoop - YouTube - https://youtu.be/Z0cOE2SRo5c?list=PLWsYJ2ygHmWhOvt...</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/PF1dUAKs_bg" title="https://youtu.be/PF1dUAKs_bg" target="_blank">Hadoop on Amazon AWS Part 5: NameNode Configuration - YouTube - https://youtu.be/PF1dUAKs_bg</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/k-DGPIwfitM" title="https://youtu.be/k-DGPIwfitM" target="_blank">Hadoop on Amazon AWS Part 6: DataNode Configuration - YouTube - https://youtu.be/k-DGPIwfitM</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/Z_5pJMCoeM8" title="https://youtu.be/Z_5pJMCoeM8" target="_blank">Hadoop on Amazon AWS Part 7: Starting up the HDFS YARN and JobHistory - YouTube - https://youtu.be/Z_5pJMCoeM8</a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/X8Tn3FETqXw" title="https://youtu.be/X8Tn3FETqXw" target="_blank">Hadoop on Amazon AWS Part 8: Working with our own HDFS - YouTube - https://youtu.be/X8Tn3FETqXw</a>
+                </li>
+        </ul>
+
+        </div>
+
+        </div>
+        <div class="display-field">
+
+
+        </div>
+
+</div>
+
+
+    </main>
+    <footer class="fixed-bottom text-muted bg-dark p-1 align-middle">
+        <p>© 2013 - 2020 - Chris Dyck</p>
+    </footer>
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/jquery"></script>
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/bootstrap(1)"></script>
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/controls"></script>
+
+
+    <!-- Scripts for Bootstrap and jQuery -->
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-toolbar.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-copy-to-clipboard.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-line-numbers.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-command-line.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-autolinker.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/prism-show-language.min.js"></script>
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/CopyToClipboard.js"></script>
+
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/common.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/tinymce.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/jquery.tinymce.min.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/LessonLinks.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/ModalDialogObject.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/ModalDialog.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/TinyMCEInit.js"></script>
+    <script src="./Lesson for BDAT1002-2017B - Friday, January 12, 2018 - Klasserom_files/tinymceplugins.js"></script>
+
+    <script type="text/javascript">
+        var tinymces = $('textarea.tinymce');
+        if (tinymces.length > 0) {
+            GetTinyMCEMenuItems();
+            TinyMCEInitObject();
+            tinymces.tinymce(tinymceobject);
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(window).resize(function () {
+            $('body').css('margin-top', parseInt($('#main-navbar').css("height")));
+        });
+
+        $(document).ready(function () {
+            $('body').css('margin-top', parseInt($('#main-navbar').css("height")));
+
+            $('.rowlink').click(function () {
+                let url = $(this).data('href');
+                let target = $(this).data('target') === undefined ? '_blank' : $(this).data('target');
+                window.open(url, target);
+            });
+        });
+    </script>
+
+    
+
+    <script>
+        $(document).ready(function () {
+            var headers = $(":header[id]");
+            var headeranchors = headers.find("a:has(i)");
+            //headeranchors.hide();
+
+            headeranchors.click(function (e) {
+                e.preventDefault();
+                copyHrefClipboard($(this));
+                //console.log(getAbsolutePath() + $(this).attr("href"));
+            });
+
+            headers.hover(function () {
+                var anchor = $(this).find("a:has(i) > i");
+                anchor.show("slow");
+            }, function () {
+                // Hover out code
+                var anchor = $(this).find("a:has(i) > i");
+                anchor.hide("slow");
+            });
+
+            //headers.mouseout(function () {
+            //    var anchor = $(this).find("a > i");
+            //    anchor.hide("slow");
+            //});
+        });
+
+        function getAbsolutePath() {
+            var loc = window.location;
+            //console.log(loc);
+            var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+            return loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+        }
+
+        function copyHrefClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(window.location.origin + window.location.pathname + $(element).attr("href")).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+
+    </script>
+
+    
+
+
+</body></html>
