@@ -175,4 +175,9 @@ wget https://archive.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar
 
 sudo tar -zxvf ~/Downloads/Hadoop/hadoop-*.tar.gz -C /usr/local
 
+# Run node
+start-dfs.sh
+
+# Test health of node by going to "<public DNS address>:50070"
+
 # SOURCE: https://klasserom.azurewebsites.net/Lessons/Binder/1960
