@@ -4,4 +4,4 @@ Hadoop-AWS-EC2-Setup
 
 <h4> About the environnement variables: </h4>
 
-The environnement variables are not set by doing the traditionnal```sudo nano ~/.bashrc```, but rather we create a file called ```bigdata.sh``` located in ```/etc/profile.d```
+We create a file called ```bigdata.sh``` in ```/etc/profile.d```, that we transform as an executable through the following command```sudo chmod +x /etc/profile.d/bigdata.sh```. Creating such an executable is handy since we will just have to execute this one file instead of havin to retype each line separatly in further commands.
