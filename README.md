@@ -1,5 +1,5 @@
 # Hadoop-AWS-EC2-Setup
-Hadoop-AWS-EC2-Setup
+This repo contains tools to run a Hadoop Cluster, and also more specifically on AW EC2.
 
 
 <h4> About the environnement variables: </h4>
@@ -10,5 +10,5 @@ Creating such an executable is handy since this file will be executed at every i
 
 More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html">here</a>
 
-</br></br>
+</br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
