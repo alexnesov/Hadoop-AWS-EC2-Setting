@@ -9,3 +9,6 @@ We create a file called ```bigdata.sh``` in ```/etc/profile.d```, that we transf
 Creating such an executable is handy since this file will be executed at every instance reboot, making these enironnement variables persistent. Indeed,```/etc/profile``` and ```/etc/profile.d``` both contain startup files.
 
 More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html">here</a>
+
+</br></br>
+Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
