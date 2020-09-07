@@ -8,4 +8,4 @@ We create a file called ```bigdata.sh``` in ```/etc/profile.d```, that we transf
 ```sudo chmod +x /etc/profile.d/bigdata.sh```</br></br> 
 Creating such an executable is handy since this file will be executed at every instance reboot, making these enironnement variables persistent. Indeed,```/etc/profile``` and ```/etc/profile.d``` both contain startup files.
 
-More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html>here</a>
+More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html">here</a>
