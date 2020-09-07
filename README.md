@@ -1,5 +1,5 @@
 # Hadoop-AWS-EC2-Setup
-This repo contains tools to run a Hadoop Cluster, and also more specifically on AW EC2.
+This repo contains tools to set up and run a Hadoop Cluster, and also more specifically on AW EC2.
 
 
 <h4> About the environnement variables: </h4>
