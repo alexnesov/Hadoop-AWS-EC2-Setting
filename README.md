@@ -20,7 +20,7 @@ sudo apt-get install mysql-server
 sudo apt-get install libmysql-java
 ```
 </br>
-Soft link for connector in Hive lib directory (or copy jar to lib folder)
+<strong>Soft link for connector in Hive lib directory (or copy jar to lib folder)</strong>
 </br>
 
 ```
@@ -38,7 +38,7 @@ mysql> SOURCE /home/ubuntu/hive/scripts/metastore/upgrade/mysql/hive-schema-0.14
 ```
 mysql> CREATE USER 'hiveuser'@'%' IDENTIFIED BY 'hivepassword'>
 mysql> GRANT all on *.* to 'hiveuser'@localhost identified by 'hivepassword';
-mysql> flush privileges;</br>
+mysql> flush privileges;
 ```
 
 Configure ```hive-site.xml``` in ```$HIVE_HOME/conf```:
