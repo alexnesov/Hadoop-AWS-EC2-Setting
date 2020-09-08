@@ -14,6 +14,10 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 
 <ul>
 	<li> Modify public DNS in each config file located in <code>~/.ssh</code></li>
+	<li> In <code>/etc/profile.d</code> of each node replace old DNS by new</li>
+		<ul>
+			<li>TEST</li>
+		</ul>
 </ul>
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
