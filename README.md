@@ -26,7 +26,12 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 			<li>Replace DNS</li>
 			<li>Do not forget to re-set <code>chmod 0400 bigdata.sh</code></li>
 			<li>Reboot to make env variables active</li>		
-</ul>
+		</ul>
+	<li> Change hostname </br>
+publichost=${NameNodeDNS}
+publichost=${DataNode001DNS}
+publichost=${DataNode002DNS}
+publichost=${DataNode003DNS}</li>>
 </ul>
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
