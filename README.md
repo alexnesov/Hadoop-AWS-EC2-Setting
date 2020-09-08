@@ -28,10 +28,14 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 			<li>Reboot to make env variables active</li>		
 		</ul>
 	<li> Change hostnames (on every node) </br>
-<code>publichost=${NameNodeDNS}</code> </br>
-<code>publichost=${DataNode001DNS}</code> </br>
-<code>publichost=${DataNode002DNS}</code> </br>
-<code>publichost=${DataNode003DNS}</code></li>
+	<code>publichost=${NameNodeDNS}</code> </br>
+	<code>publichost=${DataNode001DNS}</code> </br>
+	<code>publichost=${DataNode002DNS}</code> </br>
+	<code>publichost=${DataNode003DNS}</code>
+	<code>sudo rm -rf /etc/hostname</br>
+echo -e "${publichost}" | sudo tee --append /etc/hostname > /dev/null</br>
+sudo chown root /etc/hostname</code>	
+	</li>
 </ul>
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
