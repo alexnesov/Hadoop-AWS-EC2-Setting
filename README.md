@@ -14,6 +14,11 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 
 <ul>
 	<li> Modify public DNS in each config file located in <code>~/.ssh</code></li>
+		<ul>
+			<li><code>chmod 777 config</code></li>
+			<li>Replace DNS</li>
+			<li><code>chmod 0400 config</code></li>
+		</ul>
 	<li> In <code>/etc/profile.d</code> of each node replace old DNS by the new one</li>
 		<ul>
 			<li><code>sudo chown ubuntu bigdata.sh</code></li>
