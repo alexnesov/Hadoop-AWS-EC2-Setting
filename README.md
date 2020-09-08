@@ -13,7 +13,7 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 <h4> Required after instance stop: </h4>
 
 <ul>
-	<li> Modify public DNS in each config file located in ```~/.ssh```</li>
+	<li> Modify public DNS in each config file located in <code>~/.ssh</code></li>
 </ul>
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
