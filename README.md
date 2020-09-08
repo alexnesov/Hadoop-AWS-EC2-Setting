@@ -34,7 +34,7 @@ mysql> SOURCE /home/ubuntu/hive/scripts/metastore/upgrade/mysql/hive-schema-0.14
 <strong>Account creation:</strong>
 </br>
 <code>
-mysql> CREATE USER 'hiveuser'@'%' IDENTIFIED BY 'hivepassword' </br>;
+mysql> CREATE USER 'hiveuser'@'%' IDENTIFIED BY 'hivepassword';<b />
 mysql> GRANT all on *.* to 'hiveuser'@localhost identified by 'hivepassword';</br>
 mysql> flush privileges;</br>
 </code>
