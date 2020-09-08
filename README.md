@@ -10,6 +10,11 @@ Creating such an executable is handy since this file will be executed at every i
 
 More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.org/blfs/view/6.3/postlfs/profile.html">here</a>
 
+<h4> Required after instance stop: </h4>
+
+<ul>
+	<li> Modify public DNS in each config file located in ```~/.ssh```</li>
+
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
 
