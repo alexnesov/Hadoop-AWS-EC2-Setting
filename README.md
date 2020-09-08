@@ -17,8 +17,8 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 	<li> In <code>/etc/profile.d</code> of each node replace old DNS by the new one</li>
 		<ul>
 			<li><code>sudo chown ubuntubigdata.sh</code></li>
-			<li>chmod 777 bigdata.sh<li>
-			<li>Replace DNS</li>
+			<li>chmod 777 bigdata.sh</li>
+			<li><code>Replace DNS</code></li>
 			<li> Do not forget to re-set <code>chmod 0400 bigdata.sh</code></li>
 		</ul>
 </ul>
