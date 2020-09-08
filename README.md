@@ -31,7 +31,7 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 	<code>publichost=${NameNodeDNS}</code> </br>
 	<code>publichost=${DataNode001DNS}</code> </br>
 	<code>publichost=${DataNode002DNS}</code> </br>
-	<code>publichost=${DataNode003DNS}</code>
+	<code>publichost=${DataNode003DNS}</code> </br> </br>
 	<code>sudo rm -rf /etc/hostname</br>
 echo -e "${publichost}" | sudo tee --append /etc/hostname > /dev/null</br>
 sudo chown root /etc/hostname</code>	
