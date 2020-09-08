@@ -20,7 +20,8 @@ sudo apt-get install mysql-server
 sudo apt-get install libmysql-java
 ```
 </br>
-Soft link for connector in Hive lib directory (or copy jar to lib folder)
+<strong>Soft link for connector in Hive lib directory (or copy jar to lib folder)</strong>
+</br>
 ```
 ln -s /usr/share/java/mysql-connector-java.jar $HIVE_HOME/lib/mysql-connector-java.jar
 mysql -u root -p
@@ -28,6 +29,7 @@ mysql> CREATE DATABASE metastore;
 mysql> USE metastore;
 mysql> SOURCE /home/ubuntu/hive/scripts/metastore/upgrade/mysql/hive-schema-0.14.0.mysql.sql;
 ```
+
 </br>
 Account creation:
 ```
