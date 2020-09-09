@@ -187,7 +187,7 @@ start-dfs.sh
 
     <name>thisnamenode</name>
 
-    <value>hadoop-master</value>
+    <value>${NamandeNodeDNS}</value>
 
     <description>NameNode is the hostname specified in the config file and etc/hosts file. It may be replaced with a DNS that points to your NameNode.</description>
 
