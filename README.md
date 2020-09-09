@@ -43,9 +43,9 @@ Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to ad
 
 
 <h5>Command to find own public DNS</h5>
-```
+<code>
 dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}'
-```
+</code>
 
 
 
