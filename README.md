@@ -40,57 +40,12 @@ More informations about ```/etc/profile``` <a href="http://www.linuxfromscratch.
 </br>
 Stopping an AWS EC2 instance resets the DNS. Hence, Hadoop will require us to adjust this. Here again, we see the usage of such a file, faciliting our life for continuous adjustements.
 
-<h4> MySQL installation for Hive Metastore</h4>
 
-```
-sudo apt-get install mysql-server
-sudo apt-get install libmysql-java
-```
-</br>
-<strong>Soft link for connector in Hive lib directory (or copy jar to lib folder)</strong>
-</br>
 
+<h5>Command to find own public DNS</h5>
 ```
-ln -s /usr/share/java/mysql-connector-java.jar $HIVE_HOME/lib/mysql-connector-java.jar
-mysql -u root -p
-mysql> CREATE DATABASE metastore;
-mysql> USE metastore;
-mysql> SOURCE /home/ubuntu/hive/scripts/metastore/upgrade/mysql/hive-schema-0.14.0.mysql.sql;
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}'
 ```
 
-</br>
-<strong>Account creation:</strong>
-</br>
 
-```
-mysql> CREATE USER 'hiveuser'@'%' IDENTIFIED BY 'hivepassword'>
-mysql> GRANT all on *.* to 'hiveuser'@localhost identified by 'hivepassword';
-mysql> flush privileges;
-```
 
-Configure ```hive-site.xml``` in ```$HIVE_HOME/conf```:
-
-```
-<configuration>
-   <property>
-      <name>javax.jdo.option.ConnectionURL</name>
-      <value>jdbc:mysql://localhost/metastore?createDatabaseIfNotExist=true</value>
-      <description>metadata is stored in a MySQL server</description>
-   </property>
-   <property>
-      <name>javax.jdo.option.ConnectionDriverName</name>
-      <value>com.mysql.jdbc.Driver</value>
-      <description>MySQL JDBC driver class</description>
-   </property>
-   <property>
-      <name>javax.jdo.option.ConnectionUserName</name>
-      <value>hiveuser</value>
-      <description>user name for connecting to mysql server</description>
-   </property>
-   <property>
-      <name>javax.jdo.option.ConnectionPassword</name>
-      <value>hivepassword</value>
-      <description>password for connecting to mysql server</description>
-   </property>
-</configuration>
-``` 
