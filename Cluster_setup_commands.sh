@@ -159,7 +159,6 @@ echo $JAVA_HOME
 # /usr/lib/jvm/default-java
 
 
-# IPV6 disabled  useless on Hadoop 2.9
 
 # Download Hadoop from Apache
 
@@ -167,6 +166,15 @@ wget https://archive.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar
 
 
 sudo tar -zxvf ~/Downloads/Hadoop/hadoop-*.tar.gz -C /usr/local
+sudo mv /usr/local/hadoop-* /usr/local/hadoop
+
+
+sudo echo -e "# HADOOP Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_HOME='/usr/local/hadoop'" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_CONF_DIR=\"\${HADOOP_HOME}/etc/hadoop\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_DATA_HOME=\"\${HOME}/hadoop_data/hdfs\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "# HADOOP Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
 # Run node
 start-dfs.sh
