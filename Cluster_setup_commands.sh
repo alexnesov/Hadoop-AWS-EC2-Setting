@@ -146,7 +146,7 @@ sudo apt-get install openjdk-8-jdk
 
 # Add Environment Variables to /etc/profile.d/bigdata.sh
 echo "# JAVA Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64i" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "PATH=\$PATH:\$JAVA_HOME/bin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "# JAVA Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 # Confirm that your Java variables were added, open the /etc/profile.d/bigdata.sh file:
@@ -176,8 +176,13 @@ sudo echo -e "export HADOOP_DATA_HOME=\"\${HOME}/hadoop_data/hdfs\"" | sudo tee 
 sudo echo -e "PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 sudo echo -e "# HADOOP Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
-# Run node
-start-dfs.sh
+mkdir -p $HADOOP_DATA_HOME/datanode
+mkdir -p $HADOOP_DATA_HOME/namenode
+mkdir -p $HADOOP_DATA_HOME/tmp
+
+In hadoop-env.sh
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
 
 # Test health of node by going to "<public DNS address>:50070"
 
