@@ -7,15 +7,15 @@ sudo chmod +x /etc/profile.d/bigdata.sh
 
 sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
-export NameNodeDNS="ec2-35-180-126-36.eu-west-3.compute.amazonaws.com"
-export DataNode001DNS="ec2-15-188-76-198.eu-west-3.compute.amazonaws.com"
-export DataNode002DNS="ec2-15-236-212-130.eu-west-3.compute.amazonaws.com"
-export DataNode003DNS="ec2-15-188-238-197.eu-west-3.compute.amazonaws.com"
+export NameNodeDNS="ec2-52-47-114-249.eu-west-3.compute.amazonaws.com"
+export DataNode001DNS="ec2-15-236-208-88.eu-west-3.compute.amazonaws.com"
+export DataNode002DNS="ec2-35-180-159-161.eu-west-3.compute.amazonaws.com"
+export DataNode003DNS="ec2-15-237-62-238.eu-west-3.compute.amazonaws.com"
 
-export NameNodeIP="172.31.25.115"
-export DataNode001IP="172.31.26.106"
-export DataNode002IP="172.31.31.84"
-export DataNode003IP="172.31.18.111"
+export NameNodeIP="172.31.26.106"
+export DataNode001IP="172.31.22.145"
+export DataNode002IP="172.31.31.176"
+export DataNode003IP="172.31.31.204"
 
 export IdentityFile="~/.ssh/hadoop-aws.pem"
 
@@ -141,20 +141,13 @@ sudo service ssh restart
 # Install Java Developers Kit (JDK)
 
 sudo apt-get -y update
-sudo apt-get -y install default-jdk
+sudo apt-get install openjdk-8-jdk
 
-cd /usr/lib/jvm/
-
-# Add Environment Variables to /etc/profile.d/bigdata.sh
-sudo gedit /etc/profile.d/bigdata.sh
 
 # Add Environment Variables to /etc/profile.d/bigdata.sh
 echo "# JAVA Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
-echo "export JAVA_HOME=/usr/lib/jvm/default-java" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64i" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "PATH=\$PATH:\$JAVA_HOME/bin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
-
 echo "# JAVA Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 # Confirm that your Java variables were added, open the /etc/profile.d/bigdata.sh file:
 
