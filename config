@@ -1,20 +1,20 @@
 Host 0.0.0.0
-  HostName ec2-35-180-126-36.eu-west-3.compute.amazonaws.com 
+  HostName ec2-52-47-114-249.eu-west-3.compute.amazonaws.com 
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
 Host hadoop-master
-  HostName ec2-35-180-126-36.eu-west-3.compute.amazonaws.com 
+  HostName ec2-52-47-114-249.eu-west-3.compute.amazonaws.com 
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
 Host DataNode001
-  HostName ec2-15-188-76-198.eu-west-3.compute.amazonaws.com
+  HostName ec2-15-236-208-88.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
 Host DataNode002
-  HostName ec2-15-236-212-130.eu-west-3.compute.amazonaws.com
+  HostName ec2-35-180-159-161.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
 Host DataNode003
-  HostName ec2-15-188-238-197.eu-west-3.compute.amazonaws.com
+  HostName ec2-15-237-62-238.eu-west-3.compute.amazonaws.com
   User ubuntu
   IdentityFile ~/.ssh/hadoop-aws.pem
