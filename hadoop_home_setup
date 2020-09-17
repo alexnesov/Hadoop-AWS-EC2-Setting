@@ -1,0 +1,41 @@
+sudo touch /etc/profile.d/bigdata.sh
+sudo chmod +x /etc/profile.d/bigdata.sh
+sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+sudo reboot
+
+In ~/.ssh/config
+
+Host 0.0.0.0
+  HostName nesov 
+  User nesov
+Host hadoop-master
+  HostName nesov
+  User nesov
+Host DataNode001
+  HostName alexnes
+  User alexnes
+
+
+sudo chmod 0400 ~/.ssh/config
+scp config DataNode001:~/.ssh
+
+ssh-keygen -f ~/.ssh/id_rsa_home_hadoop -t rsa -P ""
+sudo chmod 0600 ~/.ssh/id_rsa_home_hadoop.pub 
+sudo cat ~/.ssh/id_rsa_home_hadoop.pub  >> ~/.ssh/authorized_keys
+
+sudo cat ~/.ssh/id_rsa_home_hadoop.pub  | ssh -o StrictHostKeyChecking=no DataNode001 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa_home_hadoop.pub  | ssh -o StrictHostKeyChecking=no hadoop-master 'cat >> ~/.ssh/authorized_keys'
+
+
+sudo apt-get -y update
+sudo apt-get install openjdk-8-jdk
+
+
+
+
+echo "# JAVA Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "PATH=\$PATH:\$JAVA_HOME/bin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "# JAVA Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
