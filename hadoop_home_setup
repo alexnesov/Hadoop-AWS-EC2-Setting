@@ -13,19 +13,80 @@ Host hadoop-master
   HostName nesov
   User nesov
 Host DataNode001
-  HostName alexnes
-  User alexnes
+  HostName DataNode001
+  User nesov
+Hose DataNode002
+  HostName DataNode002
+  User nesov
 
 
 sudo chmod 0400 ~/.ssh/config
 scp config DataNode001:~/.ssh
 
+
+
+
+
+export NameNodeDNS="hadoop-master"
+export DataNode001DNS="DataNode001"
+export DataNode002DNS="DataNode002
+export NameNodeIP="192.168.178.58"
+export DataNode001IP="192.168.178.59"
+export DataNode002IP="192.168.178.25"
+
+echo "# AmazonEC2 Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "export NameNodeDNS=\"${NameNodeDNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "export DataNode001DNS=\"${DataNode001DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "export DataNode002DNS=\"${DataNode002DNS}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo "" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo -e "export NameNodeIP=\"${NameNodeIP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo -e "export DataNode001IP=\"${DataNode001IP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo -e "export DataNode002IP=\"${DataNode002IP}\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+echo -e "# AmazonEC2 Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+
+
+
 ssh-keygen -f ~/.ssh/id_rsa_home_hadoop -t rsa -P ""
 sudo chmod 0600 ~/.ssh/id_rsa_home_hadoop.pub 
 sudo cat ~/.ssh/id_rsa_home_hadoop.pub  >> ~/.ssh/authorized_keys
 
-sudo cat ~/.ssh/id_rsa_home_hadoop.pub  | ssh -o StrictHostKeyChecking=no DataNode001 'cat >> ~/.ssh/authorized_keys'
-sudo cat ~/.ssh/id_rsa_home_hadoop.pub  | ssh -o StrictHostKeyChecking=no hadoop-master 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa.pub  | ssh -o StrictHostKeyChecking=no DataNode001 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa.pub  | ssh -o StrictHostKeyChecking=no hadoop-master 'cat >> ~/.ssh/authorized_keys'
+sudo cat ~/.ssh/id_rsa.pub  | ssh -o StrictHostKeyChecking=no hadoop-master 'cat >> ~/.ssh/authorized_keys'
+
+
+publichost=${NameNodeDNS}
+publichost=${DataNode001DNS}
+publichost=${DataNode002DNS}
+
+
+sudo hostname ${publichost}
+
+sudo rm -rf /etc/hostname
+echo -e "${publichost}" | sudo tee --append /etc/hostname > /dev/null
+sudo chown root /etc/hostname
+
+
+sudo rm -rf /etc/hosts
+echo -e "127.0.0.1\tlocalhost" | sudo tee --append /etc/hosts > /dev/null
+echo -e "127.0.1.1\t${publichost}" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${NameNodeIP}\thadoop-master" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode001IP}\tDataNode001" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode002IP}\tDataNode002" | sudo tee --append /etc/hosts > /dev/null
+echo -e "${DataNode003IP}\tDataNode003" | sudo tee --append /etc/hosts > /dev/null
+echo -e "\n# The following lines are desirable for IPv6 capable hosts" | sudo tee --append /etc/hosts > /dev/null
+echo -e "::1 ip6-localhost ip6-loopback" | sudo tee --append /etc/hosts > /dev/null
+echo -e "fe00::0 ip6-localnet" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff00::0 ip6-mcastprefix" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::1 ip6-allnodes" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::2 ip6-allrouters" | sudo tee --append /etc/hosts > /dev/null
+echo -e "ff02::3 ip6-allhosts" | sudo tee --append /etc/hosts > /dev/null
+sudo chown root /etc/hosts
+
+
+
+
 
 
 sudo apt-get -y update
@@ -39,3 +100,44 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64" | sudo tee --appen
 echo "PATH=\$PATH:\$JAVA_HOME/bin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 echo "# JAVA Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
 
+
+
+wget https://archive.apache.org/dist/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz -P ~/Downloads/Hadoop
+sudo tar -zxvf ~/Downloads/Hadoop/hadoop-*.tar.gz -C /usr/local
+sudo mv /usr/local/hadoop-* /usr/local/hadoop
+
+sudo echo -e "# HADOOP Variables START" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_HOME='/usr/local/hadoop'" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_CONF_DIR=\"\${HADOOP_HOME}/etc/hadoop\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "export HADOOP_DATA_HOME=\"\${HOME}/hadoop_data/hdfs\"" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "PATH=\$PATH:\$HADOOP_HOME/bin:\$HADOOP_HOME/sbin" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+sudo echo -e "# HADOOP Variables END" | sudo tee --append /etc/profile.d/bigdata.sh > /dev/null
+
+
+
+mkdir -p $HADOOP_DATA_HOME/datanode
+mkdir -p $HADOOP_DATA_HOME/namenode
+mkdir -p $HADOOP_DATA_HOME/tmp
+
+sudo chown root -R $HADOOP_HOME
+sudo chmod 777 -R $HADOOP_HOME
+
+
+
+
+sudo cp $HADOOP_CONF_DIR/mapred-site.xml.template $HADOOP_CONF_DIR/mapred-site.xml
+sudo chmod 644 $HADOOP_CONF_DIR/mapred-site.xml
+
+
+sudo chown root -R $HADOOP_HOME
+sudo chmod 777 -R $HADOOP_HOME
+
+hdfs namenode -format
+
+
+2 Nodes
+
+Only on master
+sudo touch $HADOOP_CONF_DIR/masters
+sudo rm -rf $HADOOP_CONF_DIR/masters
+echo -e "hadoop-master" | sudo tee --append $HADOOP_CONF_DIR/masters > /dev/null
