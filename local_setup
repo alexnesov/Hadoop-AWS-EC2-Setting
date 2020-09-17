@@ -132,6 +132,14 @@ sudo chmod 644 $HADOOP_CONF_DIR/mapred-site.xml
 sudo chown root -R $HADOOP_HOME
 sudo chmod 777 -R $HADOOP_HOME
 
+
+sudo rm -rf $HADOOP_DATA_HOME
+sudo rm -rf $HADOOP_HOME/logs
+
+mkdir -p $HADOOP_DATA_HOME/namenode
+mkdir -p $HADOOP_DATA_HOME/datanode
+mkdir -p $HADOOP_DATA_HOME/tmp
+
 hdfs namenode -format
 
 
@@ -141,3 +149,9 @@ Only on master
 sudo touch $HADOOP_CONF_DIR/masters
 sudo rm -rf $HADOOP_CONF_DIR/masters
 echo -e "hadoop-master" | sudo tee --append $HADOOP_CONF_DIR/masters > /dev/null
+
+sudo chown root $HADOOP_CONF_DIR/masters
+sudo chmod 0644 $HADOOP_CONF_DIR/masters
+
+sudo chown root $HADOOP_CONF_DIR/slaves
+sudo chmod 0644 $HADOOP_CONF_DIR/slaves
