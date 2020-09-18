@@ -1,0 +1,52 @@
+<configuration>
+  <!--Custom Properties-->
+
+  <property>
+
+    <name>thisnamenode</name>
+
+    <value>hadoop-master</value>
+
+    <description>localhost may be replaced with a DNS that points to the NameNode.</description>
+
+  </property>
+
+  <property>
+
+    <name>homefolder</name>
+
+    <value>/home/${user.name}</value>
+
+  </property>
+
+  <!--Hadoop Properties-->
+
+  <property>
+
+    <name>hadoop.tmp.dir</name>
+
+    <value>${homefolder}/hadoop_data/hdfs/tmp</value>
+
+    <description>A base for other temporary directories.</description>
+
+  </property>
+
+  <property>
+
+    <name>fs.defaultFS</name>
+
+    <value>hdfs://${thisnamenode}:9000</value>
+
+    <description>localhost may be replaced with a DNS that points to the NameNode.</description>
+
+  </property>
+
+  <property> 
+
+    <name>dfs.permissions</name> 
+
+    <value>false</value> 
+
+  </property>
+
+</configuration>
