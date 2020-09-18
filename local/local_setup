@@ -4,20 +4,6 @@ sudo echo -e '#!/bin/bash\n# Environment Variables for Big Data tools\n' | sudo 
 
 sudo reboot
 
-In ~/.ssh/config
-
-Host 0.0.0.0
-  HostName nesov 
-  User nesov
-Host hadoop-master
-  HostName nesov
-  User nesov
-Host DataNode001
-  HostName DataNode001
-  User nesov
-Hose DataNode002
-  HostName DataNode002
-  User nesov
 
 
 sudo chmod 0400 ~/.ssh/config
