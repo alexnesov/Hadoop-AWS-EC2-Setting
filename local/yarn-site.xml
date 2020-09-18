@@ -1,42 +1,16 @@
 <configuration>
-  <property>
+    <property>
+            <name>yarn.acl.enable</name>
+            <value>0</value>
+    </property>
 
-    <name>thisnamenode</name>
+    <property>
+            <name>yarn.resourcemanager.hostname</name>
+            <value>192.168.178.58</value>
+    </property>
 
-    <value>hadoop-master</value>
-
-    <description>NameNode is the hostname specified in the config file and etc/hosts file. It may be replaced with a DNS that points to your NameNode.</description>
-
-  </property>
-  <property>
-
-    <name>yarn.nodemanager.aux-services</name>
-
-    <value>mapreduce_shuffle</value>
-
-  </property> 
-
-  <property>
-
-    <name>mapred.job.tracker</name>
-
-    <value>${thisnamenode}:9001</value>
-
-  </property>
-
-  <!--<property>
-
-    <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
-
-    <value>org.apache.hadoop.mapred.ShuffleHandler</value>
-
-  </property>-->
-  <property>
-
-    <name>mapred.job.tracker</name>
-
-    <value>${thisnamenode}:9001</value>
-
-  </property>
+    <property>
+            <name>yarn.nodemanager.aux-services</name>
+            <value>mapreduce_shuffle</value>
+    </property>
 </configuration>
-
