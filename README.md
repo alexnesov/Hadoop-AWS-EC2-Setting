@@ -48,4 +48,8 @@ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | awk -F'"' '{ print $2}'
 </code>
 
 
+<h4> Regarding the local setup </h4>
 
+If not able to access web UI but nodes working. Check ports used and correspoding address:
+
+<code>sudo netstat -plten | grep java</code>
